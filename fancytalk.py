@@ -317,6 +317,7 @@ infinite = [" interminably "]
 
 choose = [" predestine ", " commit oneself "]
 
+can = [" may ", " could ", " be capable of ", " commit "]
 
 
 #Main
@@ -911,6 +912,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" decide " ,choose[randint(0 , len(choose)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" can " ,can[randint(0 , len(can)-1)])
 
 
 
