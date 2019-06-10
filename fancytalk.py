@@ -54,7 +54,7 @@ old = [" along in years ", " venerable ", " geriatric "]
 
 skill = [" proficiency ", " adeptness "]
 
-
+skilled = [" proficient ", " adept "]
 
 had = [" included ", " embraced "]
 
@@ -390,7 +390,10 @@ while(True):
 		translation = translation.replace(" old " ,old[randint(0 , len(old)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" skill" ,skill[randint(0 , len(skill)-1)])
+		translation = translation.replace(" skill " ,skill[randint(0 , len(skill)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" skilled " ,skilled[randint(0 , len(skilled)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" had " ,had[randint(0 , len(had)-1)])
