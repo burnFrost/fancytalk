@@ -269,7 +269,7 @@ oh = [" alas ", " woe "]
 
 always = [" at each moment ", " perpetually ", " everlastingly ", " forevermore ", " in perpetuum ", " unceasingly "]
 
-method = [" modus operandi ", " apparatus "]
+method = [" modus operandi "]
 
 advanced = [" foremost "]
 
@@ -344,6 +344,8 @@ happened = [" befallen "]
 place = [" venue "]
 
 get = [ " reap ", " appropriate ", " assimilate " ] 
+
+but = [" nevertheless "]
 
 
 
@@ -849,6 +851,9 @@ while(True):
 	for x in range(0, len(translation)):
 		translation = translation.replace(" method " ,method[randint(0 , len(method)-1)])
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" way " ,method[randint(0 , len(method)-1)])
+
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" advanced " ,advanced[randint(0 , len(advanced)-1)])
@@ -1000,6 +1005,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" get " ,get[randint(0 , len(get)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" but " ,but[randint(0 , len(but)-1)])
 
 
 
