@@ -339,6 +339,8 @@ has = [" fall upon "]
 
 rich = [" opulent "]
 
+happened = [" befallen "]
+
 
 #Main
 
@@ -975,6 +977,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" wealthy " ,rich[randint(0 , len(rich)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" happened " ,happened[randint(0 , len(happened)-1)])
 
 
 
