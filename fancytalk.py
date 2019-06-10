@@ -8,7 +8,7 @@ translation = ""
 
 #terms
 
-how = [" according unto what ", " after what precedent ", " by means of " , " by virtue of what " , " by what means ", " by what method ", " from what source ", " through what agency ", " through what medium ", " unto what degree ", " whence ", " whereby ", " wherewith "]
+how = [" according unto what ", " after what precedent ", " by means of " , " by virtue of what " , " by what means ", " by what method ", " from what source ", " through what medium ", " unto what degree ", " whence ", " whereby ", " wherewith "]
 
 who = [" whom "]
 
@@ -24,7 +24,7 @@ yours = [" thines ", " thys "]
 
 doing = [" accomplishing ", " achieving ", " acting "]
 
-does = [" suffice ", " avail ", " doest "]
+does = [" suffice ", " avail "]
 
 do = [" transact ", " conclude "]
 
