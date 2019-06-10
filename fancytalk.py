@@ -315,6 +315,8 @@ clothes = [" raiments "]
 
 getting = [" procuring ", " appropriating ", " assimilating "]
 
+infinite = [" interminably "]
+
 
 
 #Main
@@ -894,6 +896,13 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" around " ,around[randint(0 , len(around)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" infinite " ,infinite[randint(0 , len(infinite)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" forever " ,infinite[randint(0 , len(infinite)-1)])
+
 
 
 #punctuations
