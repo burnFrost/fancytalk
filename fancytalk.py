@@ -347,6 +347,8 @@ get = [ " reap ", " appropriate ", " assimilate " ]
 
 but = [" nevertheless "]
 
+quick = [" expeditious ", " presto "]
+
 
 
 #Main
@@ -1008,6 +1010,18 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" but " ,but[randint(0 , len(but)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" quick " ,quick[randint(0 , len(quick)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" fast " ,quick[randint(0 , len(quick)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" quicker " ,quick[randint(0 , len(quick)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" faster " ,quick[randint(0 , len(quick)-1)])
 
 
 
