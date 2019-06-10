@@ -321,6 +321,8 @@ can = [" may ", " could ", " be capable of ", " commit "]
 
 we = [" our own selves "]
 
+tell = [" acquaint ", " apprise " ] 
+
 
 #Main
 
@@ -923,6 +925,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" us " ,we[randint(0 , len(we)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" tell " ,tell[randint(0 , len(tell)-1)])
 
 
 
