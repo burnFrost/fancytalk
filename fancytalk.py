@@ -327,6 +327,8 @@ meet = [" rendezvous ", " foregather ", " convene " ]
 
 again = [" reiteratively "]
 
+seems = [" occurs "]
+
 
 #Main
 
@@ -939,6 +941,9 @@ while(True):
 	for x in range(0, len(translation)):
 		translation = translation.replace(" again " ,again[randint(0 , len(again)-1)])
 
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" seems " ,seems[randint(0 , len(seems)-1)])
 
 
 #punctuations
