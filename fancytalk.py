@@ -283,11 +283,11 @@ base = [" essential ", " fundamental part ", " underpinning "]
 
 did = [" satisfy "]
 
-find = [" acquisition ", " procure ", " distinguish "]
+find = [" acquisition ",  " distinguish "]
 
-found = [" acquisitioned ", " procured ", " distinguished "]
+found = [" acquisitioned ", " distinguished "]
 
-finding = [" acquisitioning ", " procuring ", " distinguishing "]
+finding = [" acquisitioning ", " distinguishing "]
 
 life = [" continuance "]
 
@@ -311,7 +311,7 @@ around = [" encompassing "]
 
 clothes = [" raiments "]
 
-getting = [" procuring ", " appropriating ", " assimilating "]
+getting = [" reaping ", " appropriating ", " assimilating "]
 
 infinite = [" interminably "]
 
@@ -342,6 +342,8 @@ rich = [" opulent "]
 happened = [" befallen "]
 
 place = [" venue "]
+
+get = [ " reap ", " appropriate ", " assimilate " ] 
 
 
 
@@ -995,6 +997,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" location " ,place[randint(0 , len(place)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" get " ,get[randint(0 , len(get)-1)])
 
 
 
