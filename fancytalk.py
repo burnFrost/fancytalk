@@ -275,7 +275,7 @@ advanced = [" foremost "]
 
 high = [" soaring ", " altitudinous "]
 
-it = [" t "]
+it = [" 't "]
 
 other = [" divergent ", " dissimilar "]
 
