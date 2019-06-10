@@ -291,8 +291,6 @@ finding = [" acquisitioning ", " procuring ", " distinguishing "]
 
 life = [" continuance "]
 
-long = [" protracted "]
-
 wait = [" interim ", " foresee ", " tarry ", " hold onto thine hat "]
 
 waiting = [" interiming ", " foreseeing ", " tarrying ", " holding onto thine hat "]
@@ -860,9 +858,6 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" existance " ,life[randint(0 , len(life)-1)])
-
-	for x in range(0, len(translation)):
-		translation = translation.replace(" long " ,long[randint(0 , len(long)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" wait " ,wait[randint(0 , len(wait)-1)])
