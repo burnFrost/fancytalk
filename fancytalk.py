@@ -26,7 +26,7 @@ doing = [" accomplishing ", " achieving ", " acting "]
 
 does = [" suffice ", " avail ", " doest "]
 
-do = [" transact "]
+do = [" transact ", " conclude "]
 
 mean = [" imply", " express"]
 
