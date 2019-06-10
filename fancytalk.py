@@ -333,6 +333,10 @@ too = [" exorbitantly "]
 
 late = [" unpunctual "]
 
+where = [" unto what venue "]
+
+has = [" fall upon "]
+
 
 #Main
 
@@ -798,6 +802,9 @@ while(True):
 		translation = translation.replace(" went " ,went[randint(0 , len(went)-1)])
 
 	for x in range(0, len(translation)):
+		translation = translation.replace(" gone " ,went[randint(0 , len(went)-1)])
+
+	for x in range(0, len(translation)):
 		translation = translation.replace(" unto " ,to[randint(0 , len(to)-1)])
 
 	for x in range(0, len(translation)):
@@ -954,6 +961,14 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" late " ,late[randint(0 , len(late)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" where " ,where[randint(0 , len(where)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" has " ,has[randint(0 , len(has)-1)])
+
+
 
 
 #punctuations
