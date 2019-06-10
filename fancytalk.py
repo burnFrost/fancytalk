@@ -307,6 +307,15 @@ won = [" achieved "]
 
 reward = [" endowment", " conferment", " guerdon", " spoil"]
 
+almost = [" nigh ", " well-nigh "]
+
+around = [" encompassing "]
+
+clothes = [" raiments "]
+
+getting = [" procuring ", " appropriating ", " assimilating "]
+
+
 
 #Main
 
@@ -876,6 +885,15 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" prize " ,reward[randint(0 , len(reward)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" almost " ,almost[randint(0 , len(almost)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" clothes " ,clothes[randint(0 , len(clothes)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" around " ,around[randint(0 , len(around)-1)])
 
 
 #punctuations
