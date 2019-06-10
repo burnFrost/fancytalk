@@ -323,6 +323,10 @@ we = [" our own selves "]
 
 tell = [" acquaint ", " apprise " ] 
 
+meet = [" rendezvous ", " foregather ", " convene " ]
+
+again = [" reiteratively "]
+
 
 #Main
 
@@ -928,6 +932,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" tell " ,tell[randint(0 , len(tell)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" meet " ,meet[randint(0 , len(meet)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" again " ,again[randint(0 , len(again)-1)])
 
 
 
