@@ -337,6 +337,8 @@ where = [" unto what venue "]
 
 has = [" fall upon "]
 
+rich = [" opulent "]
+
 
 #Main
 
@@ -967,6 +969,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" has " ,has[randint(0 , len(has)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" rich " ,rich[randint(0 , len(rich)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" wealthy " ,rich[randint(0 , len(rich)-1)])
 
 
 
