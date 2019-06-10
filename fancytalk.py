@@ -341,6 +341,9 @@ rich = [" opulent "]
 
 happened = [" befallen "]
 
+place = [" venue "]
+
+
 
 #Main
 
@@ -867,6 +870,9 @@ while(True):
 		translation = translation.replace(" find " ,find[randint(0 , len(find)-1)])
 
 	for x in range(0, len(translation)):
+		translation = translation.replace(" locate " ,find[randint(0 , len(find)-1)])
+
+	for x in range(0, len(translation)):
 		translation = translation.replace(" found " ,found[randint(0 , len(found)-1)])
 
 	for x in range(0, len(translation)):
@@ -980,6 +986,13 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" happened " ,happened[randint(0 , len(happened)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" place " ,place[randint(0 , len(place)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" location " ,place[randint(0 , len(place)-1)])
+
 
 
 
