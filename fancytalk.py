@@ -329,6 +329,10 @@ again = [" reiteratively "]
 
 seems = [" occurs "]
 
+too = [" exorbitantly "]
+
+late = [" unpunctual "]
+
 
 #Main
 
@@ -944,6 +948,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" seems " ,seems[randint(0 , len(seems)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" too " ,too[randint(0 , len(too)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" late " ,late[randint(0 , len(late)-1)])
 
 
 #punctuations
