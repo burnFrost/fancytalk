@@ -317,6 +317,8 @@ infinite = [" interminably "]
 
 choose = [" predestine ", " commit oneself "]
 
+choice = [" volition " ]
+
 can = [" may ", " could ", " be capable of ", " commit "]
 
 we = [" our own selves "]
@@ -950,6 +952,9 @@ while(True):
 		translation = translation.replace(" choose " ,choose[randint(0 , len(choose)-1)])
 
 	for x in range(0, len(translation)):
+		translation = translation.replace(" choice " ,choice[randint(0 , len(choice)-1)])
+
+	for x in range(0, len(translation)):
 		translation = translation.replace(" pick " ,choose[randint(0 , len(choose)-1)])
 
 	for x in range(0, len(translation)):
@@ -957,6 +962,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" decide " ,choose[randint(0 , len(choose)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" decision " ,choice[randint(0 , len(choice)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" can " ,can[randint(0 , len(can)-1)])
