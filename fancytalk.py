@@ -102,6 +102,10 @@ talking = [" eloquenting ", " orating "]
 
 made = [" composed ", " formulated "]
 
+make = [" compose ", " formulate "]
+
+making = [" composing ", " formulating "]
+
 bored = [" disinterested "]
 
 boring = [" platitudinous ", " interminable "]
@@ -353,6 +357,11 @@ quick = [" expeditious ", " presto ", " in short order "]
 
 quicker = [" expeditiously ", " hastily "]
 
+maybe = [" perchance ", " conceivably ", " weather permitting "]
+
+
+
+
 
 
 #Main
@@ -564,6 +573,21 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" made " ,made[randint(0 , len(made)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" created " ,made[randint(0 , len(made)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" make " ,make[randint(0 , len(make)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" create " ,make[randint(0 , len(make)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" making " ,making[randint(0 , len(making)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" creating " ,making[randint(0 , len(making)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" bored " ,bored[randint(0 , len(bored)-1)])
@@ -1035,6 +1059,11 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" faster " ,quicker[randint(0 , len(quicker)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" maybe " ,maybe[randint(0 , len(maybe)-1)])
+
+
 
 
 
