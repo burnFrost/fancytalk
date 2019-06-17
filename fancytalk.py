@@ -425,6 +425,7 @@ kin = [" kinsfolk ", " lineage ", " consanguinity ", " kindred "]
 
 story = [" anecdote ", " spiel ", " fable ", " legend ", " apologue ", " allegory "]
 
+wealth = [" luxuriance ", " affluence "]
 
 
 #Main
@@ -1269,6 +1270,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" story " ,story[randint(0 , len(story)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" wealth " ,wealth[randint(0 , len(wealth)-1)])
 
 
 
