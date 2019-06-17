@@ -441,6 +441,10 @@ quit = [" relinquish "]
 
 quiting = [" relinquishing "]
 
+begin = [" commence "]
+
+beginning = [" commencement ", " genesis "]
+
 
 #Main
 
@@ -1326,6 +1330,19 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" quiting " ,quiting[randint(0 , len(quiting)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" begin " ,begin[randint(0 , len(begin)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" start " ,begin[randint(0 , len(begin)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" beginning " ,beginning[randint(0 , len(beginning)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" starting " ,beginning[randint(0 , len(beginning)-1)])
+
 
 
 
