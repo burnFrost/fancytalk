@@ -367,6 +367,10 @@ explain = [" convey ", " elucidate "]
 
 explanation = [" elucidation "]
 
+suppose = [" presume "]
+
+supposed = [" presumed "]
+
 
 
 
@@ -1090,6 +1094,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" explanation " ,explanation[randint(0 , len(explanation)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" suppose " ,suppose[randint(0 , len(suppose)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" supposed " ,supposed[randint(0 , len(supposed)-1)])
 
 
 
