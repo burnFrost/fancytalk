@@ -445,6 +445,20 @@ begin = [" commence "]
 
 beginning = [" commencement ", " genesis "]
 
+say = [" express "]
+
+saying = [" expressing "]
+
+said = [" aforementioned "]
+
+tell = [" apprise "]
+
+told = [" apprised "]
+
+guess = [" conjecture "]
+
+guessing = [" conjecturing "]
+
 
 #Main
 
@@ -1342,6 +1356,27 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" starting " ,beginning[randint(0 , len(beginning)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" say " ,say[randint(0 , len(say)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" saying " ,saying[randint(0 , len(saying)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" said " ,said[randint(0 , len(said)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" tell " ,tell[randint(0 , len(tell)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" told " ,told[randint(0 , len(told)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" guess " ,guess[randint(0 , len(guess)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" guessing " ,guessing[randint(0 , len(guessing)-1)])
 
 
 
