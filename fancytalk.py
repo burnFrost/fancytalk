@@ -209,7 +209,9 @@ sorry = [" contrite "]
 
 hear = [" auscultate ", " heareth "]
 
-like = [" fancy ", " relish ", " delight in ", " revel in "]
+enjoy = [" relish ", " delight in ", " revel in "]
+
+similar = [" akin "]
 
 favorite = [" cherished ", " choice ", " revered "]
 
@@ -484,10 +486,7 @@ while(True):
 		translation = translation.replace(" want" ,want[randint(0 , len(want)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" like " ,like[randint(0 , len(like)-1)])
-
-	for x in range(0, len(translation)):
-		translation = translation.replace(" enjoy " ,like[randint(0 , len(like)-1)])
+		translation = translation.replace(" enjoy " ,enjoy[randint(0 , len(enjoy)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" would" ,want[randint(0 , len(want)-1)])
@@ -1198,6 +1197,11 @@ while(True):
 	for x in range(0, len(translation)):
 		translation = translation.replace(" subtract " ,remove[randint(0 , len(remove)-1)])
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" similar " ,similar[randint(0 , len(similar)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" like " ,enjoy[randint(0 , len(enjoy)-1)])
 
 
 
