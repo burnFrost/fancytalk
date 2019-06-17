@@ -353,6 +353,8 @@ place = [" venue "]
 
 get = [ " reap ", " appropriate ", " assimilate " ] 
 
+got = [ " reaped ", " appropriated ", " assimilated " ] 
+
 but = [" nevertheless "]
 
 quick = [" expeditious ", " presto ", " in short order "]
@@ -1105,6 +1107,15 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" get " ,get[randint(0 , len(get)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" gain " ,get[randint(0 , len(get)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" got " ,got[randint(0 , len(got)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" gained " ,got[randint(0 , len(got)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" but " ,but[randint(0 , len(but)-1)])
