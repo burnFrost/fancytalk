@@ -409,6 +409,8 @@ bet = [" parlay "]
 
 accept = [" acquiesce "]
 
+see = [" discern "]
+
 
 
 #Main
@@ -1223,6 +1225,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" agree " ,accept[randint(0 , len(accept)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" see " ,see[randint(0 , len(see)-1)])
 
 
 
