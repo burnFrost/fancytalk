@@ -385,6 +385,22 @@ least = [" feeblest "]
 
 most = [" utmost ", " highest degree "]
 
+large = [" exorbitant ", " generous ", " considerable "]
+
+small = [" inadequate ", " inconsequential ", " diminutive ", " humble "]
+
+upgrade = [" enrich ", " ameliorate "]
+
+upgrades = [" enrichments ", " ameliorates " ]
+
+upgraded = [" enriched ", " ameliorated "]
+
+add = [" append "]
+
+remove = [" expel "]
+
+bet = [" parlay "]
+
 
 
 #Main
@@ -1133,6 +1149,57 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" most " ,most[randint(0 , len(most)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" large " ,large[randint(0 , len(large)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" big " ,large[randint(0 , len(large)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" huge " ,large[randint(0 , len(large)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" small " ,small[randint(0 , len(small)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" little " ,small[randint(0 , len(small)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" tiny " ,small[randint(0 , len(small)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" upgrade " ,upgrade[randint(0 , len(upgrade)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" improve " ,upgrade[randint(0 , len(upgrade)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" improvement " ,upgrade[randint(0 , len(upgrade)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" upgrades " ,upgrades[randint(0 , len(upgrades)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" improvements " ,upgrades[randint(0 , len(upgrades)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" upgraded " ,upgraded[randint(0 , len(upgraded)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" improved " ,upgraded[randint(0 , len(upgraded)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" add " ,add[randint(0 , len(add)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" remove " ,remove[randint(0 , len(remove)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" subtract " ,remove[randint(0 , len(remove)-1)])
+
+
+
 
 
 
