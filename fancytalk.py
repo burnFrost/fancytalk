@@ -431,6 +431,10 @@ wealth = [" luxuriance ", " affluence "]
 
 amount = [" magnitude ", " expanse ", " passel "]
 
+joke = [" quip "]
+
+joking = [" facetious "]
+
 
 #Main
 
@@ -1295,6 +1299,15 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" lot " ,amount[randint(0 , len(amount)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" joke " ,joke[randint(0 , len(joke)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" joking " ,joking[randint(0 , len(joking)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" kidding " ,joking[randint(0 , len(joking)-1)])
 
 
 
