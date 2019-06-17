@@ -359,6 +359,13 @@ quicker = [" expeditiously ", " hastily "]
 
 maybe = [" perchance ", " conceivably ", " weather permitting "]
 
+exactly = [" precisely "]
+
+convert = [" appropriate "]
+
+explain = [" convey ", " elucidate "]
+
+explanation = [" elucidation "]
 
 
 
@@ -1062,6 +1069,27 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" maybe " ,maybe[randint(0 , len(maybe)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" exactly " ,exactly[randint(0 , len(exactly)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" convert " ,convert[randint(0 , len(convert)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" translate " ,convert[randint(0 , len(convert)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" understand " ,know[randint(0 , len(know)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" comprehend " ,know[randint(0 , len(know)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" explain " ,explain[randint(0 , len(explain)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" explanation " ,explanation[randint(0 , len(explanation)-1)])
 
 
 
