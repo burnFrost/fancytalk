@@ -411,6 +411,10 @@ accept = [" acquiesce "]
 
 see = [" discern "]
 
+event = [" conjuncture ", " ceremony "]
+
+events = [" conjunctures ", " ceremonies "]
+
 
 
 #Main
@@ -1228,6 +1232,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" see " ,see[randint(0 , len(see)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" event " ,event[randint(0 , len(event)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" events " ,events[randint(0 , len(events)-1)])
 
 
 
