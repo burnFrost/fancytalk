@@ -371,7 +371,9 @@ suppose = [" presume "]
 
 supposed = [" presumed "]
 
+getting = [" reaping ", " appropriating ", " assimilating "]
 
+better = [" ameliorate ", " sophisticated ", " exceptional "]
 
 
 
@@ -1100,6 +1102,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" supposed " ,supposed[randint(0 , len(supposed)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" getting " ,getting[randint(0 , len(getting)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" better " ,better[randint(0 , len(better)-1)])
 
 
 
