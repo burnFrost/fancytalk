@@ -429,6 +429,8 @@ story = [" anecdote ", " spiel ", " fable ", " legend ", " apologue ", " allegor
 
 wealth = [" luxuriance ", " affluence "]
 
+amount = [" magnitude ", " expanse ", " passel "]
+
 
 #Main
 
@@ -796,9 +798,6 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" much " ,much[randint(0 , len(much)-1)])
-
-	for x in range(0, len(translation)):
-		translation = translation.replace(" a lot " ,much[randint(0 , len(much)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" quiet " ,quiet[randint(0 , len(quiet)-1)])
@@ -1284,6 +1283,22 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" wealth " ,wealth[randint(0 , len(wealth)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" amount " ,amount[randint(0 , len(amount)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" chunk " ,amount[randint(0 , len(amount)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" volume " ,amount[randint(0 , len(amount)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" lot " ,amount[randint(0 , len(amount)-1)])
+
+
+
+
 
 
 
