@@ -379,6 +379,10 @@ better = [" ameliorate ", " sophisticated ", " exceptional "]
 
 become = [" metamorphose ", " harmonize ", " embellish "]
 
+becoming = [" metamorphosing to ", " harmonizing to ", " embellishing to "]
+
+became = [" metamorphosed to ", " harmonized to ", " embellished to "]
+
 before = [" antecedent to ", " preceding "]
 
 after = [" subsequently ", " ensuing "]
@@ -1138,6 +1142,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" become " ,become[randint(0 , len(become)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" becoming " ,becoming[randint(0 , len(becoming)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" became " ,became[randint(0 , len(became)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" before " ,before[randint(0 , len(before)-1)])
