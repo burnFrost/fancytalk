@@ -94,7 +94,7 @@ saying = [" expressing ", " affirming ", " conveying "]
 
 thing = [" means "]
 
-fancy = [" elegant", " lavish"]
+fancy = [" elegant ", " lavish "]
 
 talk = [" eloquent ", " orate "]
 
@@ -577,13 +577,13 @@ while(True):
 		translation = translation.replace(" thing " ,thing[randint(0 , len(thing)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" application" ,thing[randint(0 , len(thing)-1)])
+		translation = translation.replace(" application " ,thing[randint(0 , len(thing)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" program" ,thing[randint(0 , len(thing)-1)])
+		translation = translation.replace(" program " ,thing[randint(0 , len(thing)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" fancy" ,fancy[randint(0 , len(fancy)-1)])
+		translation = translation.replace(" fancy " ,fancy[randint(0 , len(fancy)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" talk " ,talk[randint(0 , len(talk)-1)])
