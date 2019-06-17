@@ -375,6 +375,8 @@ getting = [" reaping ", " appropriating ", " assimilating "]
 
 better = [" ameliorate ", " sophisticated ", " exceptional "]
 
+become = [" metamorphose ", " harmonize ", " embellish "]
+
 
 
 #Main
@@ -1108,6 +1110,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" better " ,better[randint(0 , len(better)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" become " ,become[randint(0 , len(become)-1)])
 
 
 
