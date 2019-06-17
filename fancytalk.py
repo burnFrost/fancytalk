@@ -435,6 +435,12 @@ joke = [" quip "]
 
 joking = [" facetious "]
 
+jokingly = [" facetiously "]
+
+quit = [" relinquish "]
+
+quiting = [" relinquishing "]
+
 
 #Main
 
@@ -1309,9 +1315,17 @@ while(True):
 	for x in range(0, len(translation)):
 		translation = translation.replace(" kidding " ,joking[randint(0 , len(joking)-1)])
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" jokingly " ,jokingly[randint(0 , len(jokingly)-1)])
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" kiddingly " ,jokingly[randint(0 , len(jokingly)-1)])
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" quit " ,quit[randint(0 , len(quit)-1)])
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" quiting " ,quiting[randint(0 , len(quiting)-1)])
 
 
 
