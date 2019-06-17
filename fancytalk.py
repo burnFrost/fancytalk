@@ -415,6 +415,16 @@ event = [" conjuncture ", " ceremony "]
 
 events = [" conjunctures ", " ceremonies "]
 
+bad = [" inadequate "]
+
+rude = [" peremptory "]
+
+polite = [" affable "]
+
+kin = [" kinsfolk ", " lineage ", " consanguinity ", " kindred "]
+
+story = [" anecdote ", " spiel ", " fable ", " legend ", " apologue ", " allegory "]
+
 
 
 #Main
@@ -569,6 +579,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" nice " ,good[randint(0 , len(good)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" polite " ,polite[randint(0 , len(polite)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" going " ,going[randint(0 , len(going)-1)])
@@ -1238,6 +1251,26 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" events " ,events[randint(0 , len(events)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" bad " ,bad[randint(0 , len(bad)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" rude " ,rude[randint(0 , len(rude)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" polite " ,polite[randint(0 , len(polite)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" kin " ,kin[randint(0 , len(kin)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" family " ,kin[randint(0 , len(kin)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" story " ,story[randint(0 , len(story)-1)])
+
+
 
 
 
