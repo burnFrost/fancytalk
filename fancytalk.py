@@ -377,6 +377,14 @@ better = [" ameliorate ", " sophisticated ", " exceptional "]
 
 become = [" metamorphose ", " harmonize ", " embellish "]
 
+before = [" antecedent to ", " preceding "]
+
+after = [" subsequently ", " ensuing "]
+
+least = [" feeblest "]
+
+most = [" utmost ", " highest degree "]
+
 
 
 #Main
@@ -1113,6 +1121,18 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" become " ,become[randint(0 , len(become)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" before " ,before[randint(0 , len(before)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" after " ,after[randint(0 , len(after)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" least " ,least[randint(0 , len(least)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" most " ,most[randint(0 , len(most)-1)])
 
 
 
