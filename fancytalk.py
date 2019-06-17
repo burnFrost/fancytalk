@@ -459,6 +459,8 @@ guess = [" conjecture "]
 
 guessing = [" conjecturing "]
 
+here = [" hither "]
+
 
 #Main
 
@@ -1377,6 +1379,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" guessing " ,guessing[randint(0 , len(guessing)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" here " ,here[randint(0 , len(here)-1)])
 
 
 
