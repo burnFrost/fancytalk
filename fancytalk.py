@@ -461,6 +461,16 @@ guessing = [" conjecturing "]
 
 here = [" hither "]
 
+lack = [" exiguity "]
+
+lacking = [" exiguous "]
+
+fair = [" honorable "]
+
+honest = [" virtuous "]
+
+even = [" conceivably "]
+
 
 #Main
 
@@ -1382,6 +1392,27 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" here " ,here[randint(0 , len(here)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" lack " ,lack[randint(0 , len(lack)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" absence " ,lack[randint(0 , len(lack)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" lacking " ,lacking[randint(0 , len(lacking)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" absent " ,lacking[randint(0 , len(lacking)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" fair " ,fair[randint(0 , len(fair)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" honest " ,honest[randint(0 , len(honest)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" even " ,even[randint(0 , len(even)-1)])
 
 
 
