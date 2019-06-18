@@ -473,6 +473,8 @@ even = [" conceivably "]
 
 done = [" concluded "]
 
+things = [" occurrences "]
+
 
 #Main
 
@@ -1418,6 +1420,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" done " ,done[randint(0 , len(done)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" things " ,things[randint(0 , len(things)-1)])
 
 
 
