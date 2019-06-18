@@ -475,6 +475,12 @@ done = [" concluded "]
 
 things = [" occurrences "]
 
+ask = [" inquire "]
+
+asking = [" inquiring "]
+
+asked = [" inquired "]
+
 
 #Main
 
@@ -1423,6 +1429,17 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" things " ,things[randint(0 , len(things)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" ask " ,ask[randint(0 , len(ask)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" asking " ,asking[randint(0 , len(asking)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" asked " ,asked[randint(0 , len(asked)-1)])
+
+
 
 
 
