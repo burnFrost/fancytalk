@@ -481,6 +481,10 @@ asking = [" inquiring "]
 
 asked = [" inquired "]
 
+full = [" abounding "]
+
+
+
 
 #Main
 
@@ -1438,6 +1442,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" asked " ,asked[randint(0 , len(asked)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" full " ,full[randint(0 , len(full)-1)])
 
 
 
