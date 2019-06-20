@@ -1505,6 +1505,9 @@ while(True):
 	for x in range(0, len(translation)):
 		translation = translation.replace(" many " ,many[randint(0 , len(many)-1)])
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" luck " ,luck[randint(0 , len(luck)-1)])
+
 
 
 
