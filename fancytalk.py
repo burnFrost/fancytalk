@@ -483,7 +483,13 @@ asked = [" inquired "]
 
 full = [" abounding "]
 
+crystal = [" lucent "]
 
+clean = [" limpid "]
+
+check = [" audit "]
+
+out = [" superficially "]
 
 
 #Main
@@ -1445,6 +1451,21 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" full " ,full[randint(0 , len(full)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" crystal " ,crystal[randint(0 , len(crystal)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" clean " ,clean[randint(0 , len(clean)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" clear " ,clean[randint(0 , len(clean)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" check " ,check[randint(0 , len(check)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" out " ,out[randint(0 , len(out)-1)])
 
 
 
