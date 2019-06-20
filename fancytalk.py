@@ -491,6 +491,10 @@ check = [" audit "]
 
 out = [" superficially "]
 
+worker = [" peasant "]
+
+workers = [" peasants "]
+
 
 #Main
 
@@ -1475,6 +1479,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" out " ,out[randint(0 , len(out)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" worker " ,worker[randint(0 , len(worker)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" workers " ,workers[randint(0 , len(workers)-1)])
 
 
 
