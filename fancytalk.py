@@ -497,6 +497,9 @@ worker = [" peasant "]
 
 workers = [" peasants "]
 
+many = [" abounding "]
+
+
 
 #Main
 
@@ -1496,6 +1499,11 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" workers " ,workers[randint(0 , len(workers)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" many " ,many[randint(0 , len(many)-1)])
+
+
 
 
 
