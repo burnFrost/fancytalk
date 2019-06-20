@@ -66,7 +66,9 @@ know = [" fathom ", " discern ", " perceive "]
 
 knowing = [" fathoming ", " discerning ", " perceiving "]
 
-work = [" endeavor", " perform", " function"]
+work = [" endeavor ", " perform ", " function "]
+
+working = [" endeavoring ", " performing ", " functioning "]
 
 want = [" desire", " covet", " long", " lust", " yearn"]
 
@@ -565,13 +567,22 @@ while(True):
 		translation = translation.replace(" knowing " ,knowing[randint(0 , len(knowing)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" work" ,work[randint(0 , len(work)-1)])
+		translation = translation.replace(" work " ,work[randint(0 , len(work)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" try" ,work[randint(0 , len(work)-1)])
+		translation = translation.replace(" working " ,working[randint(0 , len(working)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" attempt" ,work[randint(0 , len(work)-1)])
+		translation = translation.replace(" try " ,work[randint(0 , len(work)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" trying " ,working[randint(0 , len(working)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" attempt " ,work[randint(0 , len(work)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" attempting " ,working[randint(0 , len(working)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" want" ,want[randint(0 , len(want)-1)])
