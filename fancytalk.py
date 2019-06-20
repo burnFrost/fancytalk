@@ -84,7 +84,7 @@ going = [" ensueing ", " developing "]
 
 
 
-good = [" optimal ", " valorous "]
+good = [" valorous "]
 
 fix = [" rectify ", " remedy "]
 
@@ -498,6 +498,8 @@ worker = [" peasant "]
 workers = [" peasants "]
 
 many = [" abounding "]
+
+luck = [" fortune "]
 
 
 
