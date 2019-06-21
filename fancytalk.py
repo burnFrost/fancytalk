@@ -433,7 +433,7 @@ polite = [" affable "]
 
 kin = [" lineage ", " consanguinity ", " kindred "]
 
-story = [" anecdote ", " spiel ", " fable ", " legend ", " apologue ", " allegory "]
+story = [" anecdote ", " spiel ", " apologue ", " allegory "]
 
 wealth = [" luxuriance ", " affluence "]
 
