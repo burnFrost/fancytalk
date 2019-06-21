@@ -561,6 +561,8 @@ camera = [" daguerreotype "]
 
 cup = [" chalice "]
 
+nextw = [" subsequent "]
+
 
 #functions
 
@@ -1340,6 +1342,8 @@ while(True):
 	translation = change(" camera ", camera, translation)
 
 	translation = change(" cup ", cup, translation)
+
+	translation = change(" next ", nextw, translation)
 
 
 
