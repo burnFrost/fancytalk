@@ -134,7 +134,7 @@ word = [" dialect"]
 
 able = [" endowed ", " fitted ", " adequated "]
 
-fun = [" gratification ", " enchanting ", " pleasant "]
+fun = [" gratifying ", " enchanting ", " pleasant "]
 
 power = [" ascendancy ", " imperium ", " omnipotence " ]
 
