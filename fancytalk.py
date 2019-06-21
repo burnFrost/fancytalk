@@ -140,7 +140,7 @@ sure = [" doubtless ", " incontrovertible ", " indubitable " ]
 
 this = [" aforementioned ", " previously mentioned "]
 
-cool = [" ostentatious ", " dapper ", " a la mode "]
+cool = [" ostentatious ", " keen ", " sensational ", " a la mode "]
 
 are = [" art "]
 
