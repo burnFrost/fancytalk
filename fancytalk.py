@@ -511,6 +511,10 @@ update = [" refurbish "]
 
 updates = [" renovations "]
 
+phrase = [" expression "]
+
+phrases = [" verbiage "]
+
 
 
 
@@ -1537,6 +1541,18 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" updates " ,updates[randint(0 , len(updates)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" phrase " ,phrase[randint(0 , len(phrase)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" sentence " ,phrase[randint(0 , len(phrase)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" phrases " ,phrases[randint(0 , len(phrases)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" sentences " ,phrases[randint(0 , len(phrases)-1)])
 
 
 
