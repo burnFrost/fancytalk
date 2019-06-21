@@ -38,7 +38,7 @@ andw = [" along with ", " as a consequence ", " furthermore ", " moreover ", " i
 
 some = [" part of "]
 
-one = [" peculiarly ", " particularly ", " solitarily "]
+one = [" peculiar ", " particular ", " solitary "]
 
 every = [" each one ", " without exception "]
 
@@ -257,7 +257,9 @@ well = [" sufficiently ", " adequately ", " properly "]
 
 quite = [" considerably ", " without reservation ", " in all respects "]
 
-people = [" multitude "]
+person = [" plebeian ", " lowborn "]
+
+people = [" plebeians ", " lowborns "]
 
 went = [" departed ", " decamped "]
 
@@ -875,6 +877,8 @@ while(True):
 	translation = change(" alright ", well, translation)
 
 	translation = change(" quite ", quite, translation)
+
+	translation = change(" person ", person, translation)
 
 	translation = change(" people ", people, translation)
 
