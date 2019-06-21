@@ -612,7 +612,7 @@ while(True):
 		translation = translation.replace(" enjoy " ,enjoy[randint(0 , len(enjoy)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" like " ,enjoy[randint(0 , len(enjoy)-1)])
+		translation = translation.replace(" like2 " ,enjoy[randint(0 , len(enjoy)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" would" ,want[randint(0 , len(want)-1)])
@@ -1348,7 +1348,7 @@ while(True):
 		translation = translation.replace(" similar " ,similar[randint(0 , len(similar)-1)])
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" like2 " ,similar[randint(0 , len(similar)-1)])
+		translation = translation.replace(" like " ,similar[randint(0 , len(similar)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" accept " ,accept[randint(0 , len(accept)-1)])
