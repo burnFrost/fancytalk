@@ -545,6 +545,12 @@ suggested = [ " proposed "]
 
 suggestion = [" proposition "]
 
+parent = [" antecedent "]
+
+father = [" begetter "]
+
+mother = [" forebearer "]
+
 
 #functions
 
@@ -1299,6 +1305,17 @@ while(True):
 	translation = change(" suggested ", suggested, translation)
 
 	translation = change(" suggestion ", suggestion, translation)
+
+	translation = change(" parent ", parent, translation)
+
+	translation = change(" father ", father, translation)
+
+	translation = change(" dad ", father, translation)
+
+	translation = change(" mother ", mother, translation)
+
+	translation = change(" mom ", mother, translation)
+
 
 
 
