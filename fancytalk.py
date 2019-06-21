@@ -551,7 +551,13 @@ father = [" begetter "]
 
 mother = [" forebearer "]
 
+child = [" bairn "]
 
+double = [" duple "]
+
+triple = [" trinitarian ", " treble "]
+
+camera = [" daguerreotype "]
 
 
 #functions
@@ -1320,6 +1326,16 @@ while(True):
 	translation = change(" mother ", mother, translation)
 
 	translation = change(" mom ", mother, translation)
+
+	translation = change(" child ", child, translation)
+
+	translation = change(" baby ", child, translation)
+
+	translation = change(" double ", double, translation)
+
+	translation = change(" triple ", triple, translation)
+
+	translation = change(" camera ", camera, translation)
 
 
 
