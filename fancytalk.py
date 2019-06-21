@@ -782,7 +782,7 @@ while(True):
 
 	translation = change(" quiet ", quiet, translation)
 
-	translation = change(" silent ", silent, translation)
+	translation = change(" silent ", quiet, translation)
 
 	translation = change(" about ", about, translation)
 
@@ -876,7 +876,7 @@ while(True):
 
 	translation = change(" method ", method, translation)
 
-	translation = change(" way ", way, translation)
+	translation = change(" way ", method, translation)
 
 	translation = change(" advanced ", advanced, translation)
 
@@ -924,7 +924,7 @@ while(True):
 
 	translation = change(" reward ", reward, translation)
 
-	translation = change(" prize ", prize, translation)
+	translation = change(" prize ", reward, translation)
 
 	translation = change(" almost ", almost, translation)
 
@@ -1072,7 +1072,7 @@ while(True):
 
 	translation = change(" remove ", remove, translation)
 
-	translation = change(" subtract ", subtract, translation)
+	translation = change(" subtract ", remove, translation)
 
 	translation = change(" similar ", similar, translation)
 
