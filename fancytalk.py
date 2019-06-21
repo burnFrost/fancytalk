@@ -507,6 +507,10 @@ over = [" aloft "]
 
 dare = [" strife ", " contention "]
 
+update = [" refurbish "]
+
+updates = [" renovations "]
+
 
 
 
@@ -1394,6 +1398,9 @@ while(True):
 		translation = translation.replace(" lot " ,amount[randint(0 , len(amount)-1)])
 
 	for x in range(0, len(translation)):
+		translation = translation.replace(" bunch " ,amount[randint(0 , len(amount)-1)])
+
+	for x in range(0, len(translation)):
 		translation = translation.replace(" joke " ,joke[randint(0 , len(joke)-1)])
 
 	for x in range(0, len(translation)):
@@ -1524,6 +1531,12 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" challenge " ,dare[randint(0 , len(dare)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" update " ,update[randint(0 , len(update)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" updates " ,updates[randint(0 , len(updates)-1)])
 
 
 
