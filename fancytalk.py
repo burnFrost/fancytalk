@@ -257,9 +257,9 @@ well = [" sufficiently ", " adequately ", " properly "]
 
 quite = [" considerably ", " without reservation ", " in all respects "]
 
-person = [" plebeian ", " lowborn "]
+person = [" lowborn "]
 
-people = [" plebeians ", " lowborns "]
+people = [" lowborns "]
 
 went = [" departed ", " decamped "]
 
