@@ -411,7 +411,9 @@ remove = [" expel "]
 
 bet = [" parlay "]
 
-accept = [" acquiesce "]
+accept = [" acquiesce ", " sympathize "]
+
+accepted = [" acquiesced ", " sympathized "]
 
 see = [" discern "]
 
@@ -500,6 +502,12 @@ workers = [" peasants "]
 many = [" abounding "]
 
 luck = [" fortune "]
+
+over = [" aloft "]
+
+dare = [" strife ", " contention "]
+
+
 
 
 
@@ -1335,6 +1343,9 @@ while(True):
 		translation = translation.replace(" accept " ,accept[randint(0 , len(accept)-1)])
 
 	for x in range(0, len(translation)):
+		translation = translation.replace(" accepted " ,accepted[randint(0 , len(accepted)-1)])
+
+	for x in range(0, len(translation)):
 		translation = translation.replace(" admit " ,accept[randint(0 , len(accept)-1)])
 
 	for x in range(0, len(translation)):
@@ -1507,6 +1518,14 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" luck " ,luck[randint(0 , len(luck)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" dare " ,dare[randint(0 , len(dare)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" challenge " ,dare[randint(0 , len(dare)-1)])
+
+
 
 
 
