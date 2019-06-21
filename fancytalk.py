@@ -555,7 +555,7 @@ child = [" bairn "]
 
 double = [" duple "]
 
-triple = [" trinitarian ", " treble "]
+triple = [" trine ", " treble "]
 
 camera = [" daguerreotype "]
 
