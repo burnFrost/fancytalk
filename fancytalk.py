@@ -670,7 +670,7 @@ while(True):
 
 	translation = change(" does ", does, translation)
 
-	translation = change(" do ", fixed, translation)
+	translation = change(" do ", do, translation)
 
 	translation = change(" thing ", thing, translation)
 
