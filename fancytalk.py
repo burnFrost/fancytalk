@@ -519,6 +519,12 @@ none = [" nil "]
 
 allw = [" ensemble "]
 
+morning = [" dawn ", " sunrise "]
+
+noon = [" meridian ", " noontide "]
+
+night = [" nightfall ", " dusk ", " twilight "]
+
 
 #functions
 
@@ -1219,6 +1225,18 @@ while(True):
 	translation = change(" none ", none, translation)
 
 	translation = change(" all ", allw, translation)
+
+	translation = change(" morning ", morning, translation)
+
+	translation = change(" noon ", noon, translation)
+
+	translation = change(" afternoon ", noon, translation)
+
+	translation = change(" evening ", noon, translation)
+
+	translation = change(" night ", night, translation)
+
+	translation = change(" nite ", night, translation)
 
 
 
