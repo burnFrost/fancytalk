@@ -191,7 +191,7 @@ cheat = [" beguile ", " swindle "]
 
 learn = [" ascertain", " discern"]
 
-much = [" exuberance ", " profuseness "]
+much = [" exuberantly ", " profusely "]
 
 quiet = [" reticent ", " whist "]
 
@@ -787,6 +787,8 @@ while(True):
 	translation = change(" learn ", learn, translation)
 
 	translation = change(" much ", much, translation)
+
+	translation = change(" really ", much, translation)
 
 	translation = change(" quiet ", quiet, translation)
 
