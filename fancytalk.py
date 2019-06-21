@@ -134,8 +134,6 @@ word = [" dialect"]
 
 able = [" endowed ", " fitted ", " adequated "]
 
-fun = [" gratifying ", " enchanting ", " pleasant "]
-
 power = [" ascendancy ", " imperium ", " omnipotence " ]
 
 sure = [" doubtless ", " incontrovertible ", " indubitable " ]
@@ -211,7 +209,11 @@ sorry = [" contrite "]
 
 hear = [" auscultate ", " heareth "]
 
-enjoy = [" relish ", " delight in ", " revel in "]
+enjoy = [" relish ", " delight in ", " revel in ", " gratify "]
+
+enjoyable = [" gratifying ", " enchanting ", " pleasant "]
+
+enjoyment = [" gratification "]
 
 similar = [" akin "]
 
@@ -531,6 +533,12 @@ currently = [" in aforementioned juncture "]
 
 moment = [" trice "]
 
+suggest = [" propose "]
+
+suggested = [ " proposed "]
+
+suggestion = [" proposition "]
+
 
 #functions
 
@@ -607,6 +615,12 @@ while(True):
 	translation = change(" would ", want, translation)
 
 	translation = change(" like2 ", enjoy, translation)
+
+	translation = change(" enjoy ", enjoy, translation)
+
+	translation = change(" enjoyable ", enjoyable, translation)
+
+	translation = change(" enjoyment ", enjoyment, translation)
 
 	translation = change(" need ", need, translation)
 
@@ -730,7 +744,7 @@ while(True):
 
 	translation = change(" able ", able, translation)
 
-	translation = change(" fun ", fun, translation)
+	translation = change(" fun ", enjoyable, translation)
 
 	translation = change(" sure ", sure, translation)
 
@@ -1251,6 +1265,12 @@ while(True):
 	translation = change(" currently ", currently, translation)
 
 	translation = change(" moment ", moment, translation)
+
+	translation = change(" suggest ", suggest, translation)
+
+	translation = change(" suggested ", suggested, translation)
+
+	translation = change(" suggestion ", suggestion, translation)
 
 
 
