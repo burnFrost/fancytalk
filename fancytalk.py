@@ -1134,6 +1134,14 @@ while(True):
 
 	translation = change(" family ", kin, translation)
 
+	translation = change(" brother ", kin, translation)
+
+	translation = change(" bro ", kin, translation)
+
+	translation = change(" sister ", kin, translation)
+
+	translation = change(" sis ", kin, translation)
+
 	translation = change(" story ", story, translation)
 
 	translation = change(" wealth ", wealth, translation)
