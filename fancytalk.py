@@ -431,7 +431,7 @@ rude = [" peremptory "]
 
 polite = [" affable "]
 
-kin = [" kinsfolk ", " lineage ", " consanguinity ", " kindred "]
+kin = [" lineage ", " consanguinity ", " kindred "]
 
 story = [" anecdote ", " spiel ", " fable ", " legend ", " apologue ", " allegory "]
 
