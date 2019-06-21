@@ -527,7 +527,9 @@ night = [" nightfall ", " dusk ", " twilight "]
 
 effort = [" resolution "]
 
-currently = [" in aforementioned trice "]
+currently = [" in aforementioned juncture "]
+
+moment = [" trice "]
 
 
 #functions
@@ -1247,6 +1249,8 @@ while(True):
 	translation = change(" effort ", effort, translation)
 
 	translation = change(" currently ", currently, translation)
+
+	translation = change(" moment ", moment, translation)
 
 
 
