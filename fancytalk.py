@@ -166,6 +166,10 @@ thank = [" be obliged unto "]
 
 happen = [" eventuate ", " proceed ", " betide "]
 
+happens = [" eventuates ", " proceeds ", " betides "]
+
+happened = [" eventuated ", " proceeded ", " betided "]
+
 happening = [" eventuating ", " proceeding ", " betiding "]
 
 should = [ " entertain ", " suffer ", " fall on "]
@@ -560,6 +564,14 @@ while(True):
 
 	translation = " "+translation+" "
 
+#fix
+
+	for x in range(0, len(translation)):
+		translation = translation.replace("n't " ," nay ")
+
+	for x in range(0, len(translation)):
+		translation = translation.replace("'re " ," art ")
+
 #translate
 
 	translation = change(" mean", mean, translation)
@@ -781,6 +793,10 @@ while(True):
 	translation = change(" thank ", thank, translation)
 
 	translation = change(" happen ", happen, translation)
+
+	translation = change(" happens ", happens, translation)
+
+	translation = change(" happened ", happened, translation)
 
 	translation = change(" happening ", happening, translation)
 
@@ -1288,6 +1304,7 @@ while(True):
 
 #punctuations
 
+
 	for x in range(0, len(translation)):
 		translation = translation.replace(" ." ,".")
 
@@ -1300,5 +1317,12 @@ while(True):
 	for x in range(0, len(translation)):
 		translation = translation.replace(" ?" ,"?")
 
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" a a" ," an a")
+
+
+
 	print("/ "+translation)
+
 
