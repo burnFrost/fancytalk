@@ -525,6 +525,8 @@ noon = [" meridian ", " noontide "]
 
 night = [" nightfall ", " dusk ", " twilight "]
 
+effort = [" resolution "]
+
 
 #functions
 
@@ -1237,6 +1239,8 @@ while(True):
 	translation = change(" night ", night, translation)
 
 	translation = change(" nite ", night, translation)
+
+	translation = change(" effort ", effort, translation)
 
 
 
