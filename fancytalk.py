@@ -327,7 +327,7 @@ choose = [" predestine ", " commit oneself "]
 
 choice = [" volition " ]
 
-can = [" may ", " could ", " be capable of ", " commit "]
+can = [" may ", " be capable of ", " commit "]
 
 we = [" our own selves "]
 
@@ -1153,6 +1153,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" can " ,can[randint(0 , len(can)-1)])
+
+	for x in range(0, len(translation)):
+		translation = translation.replace(" could " ,can[randint(0 , len(can)-1)])
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" we " ,we[randint(0 , len(we)-1)])
