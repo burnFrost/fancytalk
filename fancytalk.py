@@ -732,7 +732,7 @@ while(True):
 
 	translation = change(" basic", basic, translation)
 
-	translation = change(" normal", normal, translation)
+	translation = change(" normal", basic, translation)
 
 	translation = change(" best ", best, translation)
 
