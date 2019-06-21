@@ -515,8 +515,20 @@ phrase = [" expression "]
 
 phrases = [" verbiage "]
 
+none = [" nil "]
+
+allw = [" ensemble "]
 
 
+#functions
+
+
+
+
+def change(text, words, translate):
+	for x in range(0, len(translate)):
+		translate = translate.replace(text ,words[randint(0 , len(words)-1)])
+	return translate
 
 
 #Main
@@ -528,1049 +540,685 @@ while(True):
 
 #translate
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" mean" ,mean[randint(0 , len(mean)-1)])
+	translation = change(" mean", mean, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" and " ,andw[randint(0 , len(andw)-1)])
+	translation = change(" and ", andw, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" also " ,also[randint(0 , len(also)-1)])
+	translation = change(" also ", also, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" some " ,some[randint(0 , len(some)-1)])
+	translation = change(" some ", some, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" any " ,some[randint(0 , len(some)-1)])
+	translation = change(" any ", some, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" one " ,one[randint(0 , len(one)-1)])
+	translation = change(" one ", one, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" every " ,every[randint(0 , len(every)-1)])
+	translation = change(" every ", every, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" not " ,notw[randint(0 , len(notw)-1)])
+	translation = change(" not ", notw, translation)
 
+	translation = change(" yes ", yes, translation)
 
+	translation = change(" new ", new, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" yes " ,yes[randint(0 , len(yes)-1)])
+	translation = change(" old ", old, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" new " ,new[randint(0 , len(new)-1)])
+	translation = change(" skill ", skill, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" old " ,old[randint(0 , len(old)-1)])
+	translation = change(" skilled ", skilled, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" skill " ,skill[randint(0 , len(skill)-1)])
+	translation = change(" had ", had, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" skilled " ,skilled[randint(0 , len(skilled)-1)])
+	translation = change(" correct ", correct, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" had " ,had[randint(0 , len(had)-1)])
+	translation = change(" true ", correct, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" correct " ,correct[randint(0 , len(correct)-1)])
+	translation = change(" today ", today, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" true " ,correct[randint(0 , len(correct)-1)])
+	translation = change(" know ", know, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" today " ,today[randint(0 , len(today)-1)])
+	translation = change(" knowing ", knowing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" know " ,know[randint(0 , len(know)-1)])
+	translation = change(" work ", work, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" knowing " ,knowing[randint(0 , len(knowing)-1)])
+	translation = change(" working ", working, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" work " ,work[randint(0 , len(work)-1)])
+	translation = change(" try ", work, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" working " ,working[randint(0 , len(working)-1)])
+	translation = change(" trying ", working, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" try " ,work[randint(0 , len(work)-1)])
+	translation = change(" attempt ", work, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" trying " ,working[randint(0 , len(working)-1)])
+	translation = change(" attempting ", working, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" attempt " ,work[randint(0 , len(work)-1)])
+	translation = change(" want ", want, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" attempting " ,working[randint(0 , len(working)-1)])
+	translation = change(" would ", want, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" want" ,want[randint(0 , len(want)-1)])
+	translation = change(" like2 ", enjoy, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" enjoy " ,enjoy[randint(0 , len(enjoy)-1)])
+	translation = change(" need ", need, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" like2 " ,enjoy[randint(0 , len(enjoy)-1)])
+	translation = change(" needs ", needs, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" would" ,want[randint(0 , len(want)-1)])
+	translation = change(" needing ", needing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" need " ,need[randint(0 , len(need)-1)])
+	translation = change(" no ", no, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" needs " ,needs[randint(0 , len(needs)-1)])
+	translation = change(" needing ", needing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" needing " ,needing[randint(0 , len(needing)-1)])
+	translation = change(" so ", so, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" no " ,no[randint(0 , len(no)-1)])
+	translation = change(" how ", how, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" so " ,so[randint(0 , len(so)-1)])
+	translation = change(" who ", who, translation)
 
+	translation = change(" the ", the, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" how " ,how[randint(0 , len(how)-1)])
+	translation = change(" they ", them, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" who " ,who[randint(0 , len(who)-1)])
+	translation = change(" them ", them, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" the " ,the[randint(0 , len(the)-1)])
+	translation = change(" you ", you, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" they " ,them[randint(0 , len(them)-1)])
+	translation = change(" your ", your, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" them " ,them[randint(0 , len(them)-1)])
+	translation = change(" their ", your, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" you " ,you[randint(0 , len(you)-1)])
+	translation = change(" yours ", yours, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" your " ,your[randint(0 , len(your)-1)])
+	translation = change(" doing ", doing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" their " ,your[randint(0 , len(your)-1)])
+	translation = change(" hey ", hey, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" yours " ,yours[randint(0 , len(yours)-1)])
+	translation = change(" hi ", hey, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" theirs " ,yours[randint(0 , len(yours)-1)])
+	translation = change(" hello ", hey, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" doing " ,doing[randint(0 , len(doing)-1)])
+	translation = change(" good ", good, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" hey " ,hey[randint(0 , len(hey)-1)])
+	translation = change(" nice ", good, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" hi " ,hey[randint(0 , len(hey)-1)])
+	translation = change(" polite ", polite, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" hello " ,hey[randint(0 , len(hey)-1)])
+	translation = change(" going ", going, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" good " ,good[randint(0 , len(good)-1)])
+	translation = change(" fix ", fix, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" nice " ,good[randint(0 , len(good)-1)])
+	translation = change(" repair ", fix, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" polite " ,polite[randint(0 , len(polite)-1)])
+	translation = change(" fixes ", fixes, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" going " ,going[randint(0 , len(going)-1)])
+	translation = change(" repairs ", fixes, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" fix " ,fix[randint(0 , len(fix)-1)])
+	translation = change(" fixed ", fixed, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" repair " ,fix[randint(0 , len(fix)-1)])
+	translation = change(" repaired ", fixed, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" fixes " ,fixes[randint(0 , len(fixes)-1)])
+	translation = change(" saying ", saying, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" repairs " ,fixes[randint(0 , len(fixes)-1)])
+	translation = change(" does ", does, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" fixed " ,fixed[randint(0 , len(fixed)-1)])
+	translation = change(" do ", fixed, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" repaired " ,fixed[randint(0 , len(fixed)-1)])
+	translation = change(" thing ", thing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" saying " ,saying[randint(0 , len(saying)-1)])
+	translation = change(" application ", thing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" does " ,does[randint(0 , len(does)-1)])	
+	translation = change(" program ", thing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" do " ,do[randint(0 , len(do)-1)])
+	translation = change(" fancy ", fancy, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" thing " ,thing[randint(0 , len(thing)-1)])
+	translation = change(" talk ", talk, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" application " ,thing[randint(0 , len(thing)-1)])
+	translation = change(" speak ", talk, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" program " ,thing[randint(0 , len(thing)-1)])
+	translation = change(" talking ", talking, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" fancy " ,fancy[randint(0 , len(fancy)-1)])
+	translation = change(" speaking ", talking, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" talk " ,talk[randint(0 , len(talk)-1)])
+	translation = change(" made ", made, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" speak " ,talk[randint(0 , len(talk)-1)])
+	translation = change(" make ", make, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" talking " ,talking[randint(0 , len(talking)-1)])
+	translation = change(" create ", make, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" made " ,made[randint(0 , len(made)-1)])
+	translation = change(" created ", made, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" created " ,made[randint(0 , len(made)-1)])
+	translation = change(" making ", making, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" make " ,make[randint(0 , len(make)-1)])
+	translation = change(" creating ", making, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" create " ,make[randint(0 , len(make)-1)])
+	translation = change(" bored ", bored, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" making " ,making[randint(0 , len(making)-1)])
+	translation = change(" boring ", boring, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" creating " ,making[randint(0 , len(making)-1)])
+	translation = change(" am ", am, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" bored " ,bored[randint(0 , len(bored)-1)])
+	translation = change(" happy ", happy, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" boring " ,boring[randint(0 , len(boring)-1)])
+	translation = change(" glad ", happy, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" am " ,am[randint(0 , len(am)-1)])
+	translation = change(" look ", look, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" happy " ,happy[randint(0 , len(happy)-1)])
+	translation = change(" looking ", looking, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" glad " ,happy[randint(0 , len(happy)-1)])
+	translation = change(" think ", think, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" look " ,look[randint(0 , len(look)-1)])
+	translation = change(" new ", new, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" looking " ,looking[randint(0 , len(looking)-1)])
+	translation = change(" friend", friend, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" think " ,think[randint(0 , len(think)-1)])
+	translation = change(" up ", up, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" new " ,new[randint(0 , len(new)-1)])
+	translation = change(" more ", more, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" friend" ,friend[randint(0 , len(friend)-1)])
+	translation = change(" word", word, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" up " ,up[randint(0 , len(up)-1)])
+	translation = change(" language", word, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" more " ,more[randint(0 , len(more)-1)])
+	translation = change(" able ", able, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" word" ,word[randint(0 , len(word)-1)])
+	translation = change(" fun ", fun, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" language" ,word[randint(0 , len(word)-1)])
+	translation = change(" sure ", sure, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" able " ,able[randint(0 , len(able)-1)])
+	translation = change(" this ", this, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" fun " ,fun[randint(0 , len(fun)-1)])
+	translation = change(" cool ", cool, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" sure " ,sure[randint(0 , len(sure)-1)])
+	translation = change(" are ", are, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" this " ,this[randint(0 , len(this)-1)])
+	translation = change(" is ", are, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" cool " ,cool[randint(0 , len(cool)-1)])
-	
-	for x in range(0, len(translation)):
-		translation = translation.replace(" are " ,are[randint(0 , len(are)-1)])
+	translation = change(" basic", basic, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" is " ,are[randint(0 , len(are)-1)])
+	translation = change(" normal", normal, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" basic" ,basic[randint(0 , len(basic)-1)])
+	translation = change(" best ", best, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" normal" ,basic[randint(0 , len(basic)-1)])
+	translation = change(" issue", issue, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" best" ,best[randint(0 , len(best)-1)])
+	translation = change(" test ", test, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" issue" ,issue[randint(0 , len(issue)-1)])
+	translation = change(" testing ", testing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" test " ,test[randint(0 , len(test)-1)])
+	translation = change(" example ", example, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" testing " ,testing[randint(0 , len(testing)-1)])
+	translation = change(" chat ", chat, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" example" ,example[randint(0 , len(example)-1)])
+	translation = change(" chatting ", chatting, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" chat " ,chat[randint(0 , len(chat)-1)])
+	translation = change(" very ", very, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" chatting " ,chatting[randint(0 , len(chatting)-1)])
+	translation = change(" thank ", thank, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" very " ,very[randint(0 , len(very)-1)])
+	translation = change(" happen ", happen, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" thank " ,thank[randint(0 , len(thank)-1)])
+	translation = change(" happening ", happening, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" happen " ,happen[randint(0 , len(happen)-1)])
+	translation = change(" should ", should, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" happening " ,happening[randint(0 , len(happening)-1)])
+	translation = change(" must ", should, translation)
 
+	translation = change(" now ", now, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" should " ,should[randint(0 , len(should)-1)])
+	translation = change(" time ", time, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" must " ,should[randint(0 , len(should)-1)])
+	translation = change(" pointless ", pointless, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" now " ,now[randint(0 , len(now)-1)])
+	translation = change(" petty ", pointless, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" time " ,time[randint(0 , len(time)-1)])
+	translation = change(" go ", go, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" pointless" ,pointless[randint(0 , len(pointless)-1)])
+	translation = change(" goes ", goes, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" petty" ,pointless[randint(0 , len(pointless)-1)])
+	translation = change(" lie ", lie, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" read" ,read[randint(0 , len(read)-1)])
+	translation = change(" cheat ", cheat, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" go " ,go[randint(0 , len(go)-1)])
+	translation = change(" learn ", learn, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" goes " ,goes[randint(0 , len(goes)-1)])
+	translation = change(" much ", much, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" lie " ,lie[randint(0 , len(lie)-1)])
+	translation = change(" quiet ", quiet, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" cheat " ,cheat[randint(0 , len(cheat)-1)])
+	translation = change(" silent ", silent, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" learn" ,learn[randint(0 , len(learn)-1)])
+	translation = change(" about ", about, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" much " ,much[randint(0 , len(much)-1)])
+	translation = change(" on ", on, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" quiet " ,quiet[randint(0 , len(quiet)-1)])
+	translation = change(" be ", be, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" silent " ,quiet[randint(0 , len(quiet)-1)])
+	translation = change(" being ", being, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" about " ,about[randint(0 , len(about)-1)])
+	translation = change(" there ", there, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" on " ,on[randint(0 , len(on)-1)])
+	translation = change(" smart ", smart, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" be " ,be[randint(0 , len(be)-1)])
+	translation = change(" sorry ", sorry, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" being " ,being[randint(0 , len(being)-1)])
+	translation = change(" hear ", hear, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" there " ,there[randint(0 , len(there)-1)])
+	translation = change(" favorite ", favorite, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" smart " ,smart[randint(0 , len(smart)-1)])
+	translation = change(" food ", food, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" sorry " ,sorry[randint(0 , len(sorry)-1)])
+	translation = change(" having ", having, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" hear " ,hear[randint(0 , len(hear)-1)])
+	translation = change(" tedious ", tedious, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" favorite " ,favorite[randint(0 , len(favorite)-1)])
+	translation = change(" repeatative ", tedious, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" food " ,food[randint(0 , len(food)-1)])
+	translation = change(" for ", forw, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" having " ,having[randint(0 , len(having)-1)])
+	translation = change(" yesterday ", yesterday, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" tedious " ,tedious[randint(0 , len(tedious)-1)])
+	translation = change(" confuse ", confuse, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" repeatative " ,tedious[randint(0 , len(tedious)-1)])
+	translation = change(" confused ", confused, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" for " ,forw[randint(0 , len(forw)-1)])
+	translation = change(" confusing ", confusing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" yesterday " ,yesterday[randint(0 , len(yesterday)-1)])
+	translation = change(" use ", use, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" confuse " ,confuse[randint(0 , len(confuse)-1)])
+	translation = change(" gratz ", gratz, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" confused " ,confused[randint(0 , len(confused)-1)])
+	translation = change(" congratulations ", gratz, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" confusing " ,confusing[randint(0 , len(confusing)-1)])
+	translation = change(" likely ", likely, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" use " ,use[randint(0 , len(use)-1)])
+	translation = change(" probably ", likely, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" using " ,using[randint(0 , len(using)-1)])
+	translation = change(" my ", my, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" gratz " ,gratz[randint(0 , len(gratz)-1)])
+	translation = change(" that ", that, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" congratulations " ,gratz[randint(0 , len(gratz)-1)])
+	translation = change(" will ", will, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" likely " ,likely[randint(0 , len(likely)-1)])
+	translation = change(" only ", only, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" probably " ,likely[randint(0 , len(likely)-1)])
+	translation = change(" just ", only, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" my " ,my[randint(0 , len(my)-1)])
+	translation = change(" great ", great, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" that " ,that[randint(0 , len(that)-1)])
+	translation = change(" well ", well, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" will " ,will[randint(0 , len(will)-1)])
+	translation = change(" alright ", well, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" only " ,only[randint(0 , len(only)-1)])
+	translation = change(" quite ", quite, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" just " ,only[randint(0 , len(only)-1)])
+	translation = change(" people ", people, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" great " ,great[randint(0 , len(great)-1)])
+	translation = change(" went ", went, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" well " ,well[randint(0 , len(well)-1)])
+	translation = change(" gone ", went, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" alright " ,well[randint(0 , len(well)-1)])
+	translation = change(" unto ", to, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" quite " ,quite[randint(0 , len(quite)-1)])
+	translation = change(" then ", then, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" people " ,people[randint(0 , len(people)-1)])
+	translation = change(" i ", i, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" went " ,went[randint(0 , len(went)-1)])
+	translation = change(" me ", i, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" gone " ,went[randint(0 , len(went)-1)])
+	translation = change(" why ", why, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" unto " ,to[randint(0 , len(to)-1)])
+	translation = change(" put ", put, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" then " ,then[randint(0 , len(then)-1)])
+	translation = change(" self ", selfw, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" i " ,i[randint(0 , len(i)-1)])
+	translation = change(" pants ", pants, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" me " ,i[randint(0 , len(i)-1)])
+	translation = change(" oh ", oh, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" why " ,why[randint(0 , len(why)-1)])
+	translation = change(" always ", always, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" put " ,put[randint(0 , len(put)-1)])
+	translation = change(" method ", method, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" self " ,selfw[randint(0 , len(selfw)-1)])
+	translation = change(" way ", way, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" pants " ,pants[randint(0 , len(pants)-1)])
+	translation = change(" advanced ", advanced, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" oh " ,oh[randint(0 , len(oh)-1)])
+	translation = change(" high ", high, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" always " ,always[randint(0 , len(always)-1)])
+	translation = change(" it ", it, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" method " ,method[randint(0 , len(method)-1)])
+	translation = change(" other ", other, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" way " ,method[randint(0 , len(method)-1)])
+	translation = change(" different ", other, translation)
 
+	translation = change(" base ", base, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" advanced " ,advanced[randint(0 , len(advanced)-1)])
+	translation = change(" did ", did, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" high " ,high[randint(0 , len(high)-1)])
+	translation = change(" find ", find, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" it " ,it[randint(0 , len(it)-1)])
+	translation = change(" locate ", find, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" other " ,other[randint(0 , len(other)-1)])
+	translation = change(" found ", found, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" different " ,other[randint(0 , len(other)-1)])
+	translation = change(" finding ", finding, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" base " ,base[randint(0 , len(base)-1)])
+	translation = change(" discover ", find, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" did " ,did[randint(0 , len(did)-1)])
+	translation = change(" discovered ", found, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" find " ,find[randint(0 , len(find)-1)])
+	translation = change(" discovering ", finding, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" locate " ,find[randint(0 , len(find)-1)])
+	translation = change(" life ", life, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" found " ,found[randint(0 , len(found)-1)])
+	translation = change(" existance ", life, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" finding " ,finding[randint(0 , len(finding)-1)])
-	
-	for x in range(0, len(translation)):
-		translation = translation.replace(" discover " ,find[randint(0 , len(find)-1)])
+	translation = change(" wait ", wait, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" discovered " ,found[randint(0 , len(found)-1)])
+	translation = change(" waiting ", waiting, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" discovering " ,finding[randint(0 , len(finding)-1)])
+	translation = change(" move ", move, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" life " ,life[randint(0 , len(life)-1)])
+	translation = change(" moving ", moving, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" existance " ,life[randint(0 , len(life)-1)])
+	translation = change(" win ", win, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" wait " ,wait[randint(0 , len(wait)-1)])
+	translation = change(" won ", won, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" waiting " ,waiting[randint(0 , len(waiting)-1)])
+	translation = change(" reward ", reward, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" move " ,move[randint(0 , len(move)-1)])
+	translation = change(" prize ", prize, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" moving " ,moving[randint(0 , len(moving)-1)])
+	translation = change(" almost ", almost, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" win " ,win[randint(0 , len(win)-1)])
+	translation = change(" clothes ", clothes, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" won " ,won[randint(0 , len(won)-1)])
+	translation = change(" around ", around, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" reward " ,reward[randint(0 , len(reward)-1)])
+	translation = change(" infinite ", infinite, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" prize " ,reward[randint(0 , len(reward)-1)])
+	translation = change(" forever ", infinite, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" almost " ,almost[randint(0 , len(almost)-1)])
+	translation = change(" choose ", choose, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" clothes " ,clothes[randint(0 , len(clothes)-1)])
+	translation = change(" choice ", choice, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" around " ,around[randint(0 , len(around)-1)])
+	translation = change(" pick ", choose, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" infinite " ,infinite[randint(0 , len(infinite)-1)])
+	translation = change(" select ", choose, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" forever " ,infinite[randint(0 , len(infinite)-1)])
+	translation = change(" decide ", choose, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" choose " ,choose[randint(0 , len(choose)-1)])
+	translation = change(" decision ", choice, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" choice " ,choice[randint(0 , len(choice)-1)])
+	translation = change(" can ", can, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" pick " ,choose[randint(0 , len(choose)-1)])
+	translation = change(" could ", can, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" select " ,choose[randint(0 , len(choose)-1)])
+	translation = change(" we ", we, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" decide " ,choose[randint(0 , len(choose)-1)])
+	translation = change(" us ", we, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" decision " ,choice[randint(0 , len(choice)-1)])
+	translation = change(" tell ", tell, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" can " ,can[randint(0 , len(can)-1)])
+	translation = change(" meet ", meet, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" could " ,can[randint(0 , len(can)-1)])
+	translation = change(" again ", again, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" we " ,we[randint(0 , len(we)-1)])
+	translation = change(" seems ", seems, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" us " ,we[randint(0 , len(we)-1)])
+	translation = change(" too ", too, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" tell " ,tell[randint(0 , len(tell)-1)])
+	translation = change(" late ", late, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" meet " ,meet[randint(0 , len(meet)-1)])
+	translation = change(" where ", where, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" again " ,again[randint(0 , len(again)-1)])
+	translation = change(" has ", has, translation)
 
+	translation = change(" rich ", rich, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" seems " ,seems[randint(0 , len(seems)-1)])
+	translation = change(" wealthy ", rich, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" too " ,too[randint(0 , len(too)-1)])
+	translation = change(" happened ", happened, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" late " ,late[randint(0 , len(late)-1)])
+	translation = change(" place ", place, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" where " ,where[randint(0 , len(where)-1)])
+	translation = change(" location ", place, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" has " ,has[randint(0 , len(has)-1)])
+	translation = change(" get ", get, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" rich " ,rich[randint(0 , len(rich)-1)])
+	translation = change(" obtain ", get, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" wealthy " ,rich[randint(0 , len(rich)-1)])
+	translation = change(" gain ", get, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" happened " ,happened[randint(0 , len(happened)-1)])
+	translation = change(" got ", got, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" place " ,place[randint(0 , len(place)-1)])
+	translation = change(" obtained ", got, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" location " ,place[randint(0 , len(place)-1)])
+	translation = change(" gained ", got, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" get " ,get[randint(0 , len(get)-1)])
+	translation = change(" but ", but, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" obtain " ,get[randint(0 , len(get)-1)])
+	translation = change(" quick ", quick, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" gain " ,get[randint(0 , len(get)-1)])
+	translation = change(" fast ", quick, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" got " ,got[randint(0 , len(got)-1)])
+	translation = change(" quicker ", quicker, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" obtained " ,got[randint(0 , len(got)-1)])
+	translation = change(" quickly ", quick, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" gained " ,got[randint(0 , len(got)-1)])
+	translation = change(" faster ", quicker, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" but " ,but[randint(0 , len(but)-1)])
+	translation = change(" maybe ", maybe, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" quick " ,quick[randint(0 , len(quick)-1)])
+	translation = change(" exactly ", exactly, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" fast " ,quick[randint(0 , len(quick)-1)])
+	translation = change(" convert ", convert, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" quicker " ,quicker[randint(0 , len(quicker)-1)])
+	translation = change(" translate ", convert, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" quickly " ,quicker[randint(0 , len(quicker)-1)])
+	translation = change(" understand ", know, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" faster " ,quicker[randint(0 , len(quicker)-1)])
+	translation = change(" comprehend ", know, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" maybe " ,maybe[randint(0 , len(maybe)-1)])
+	translation = change(" explain ", explain, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" exactly " ,exactly[randint(0 , len(exactly)-1)])
+	translation = change(" explanation ", explanation, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" convert " ,convert[randint(0 , len(convert)-1)])
+	translation = change(" suppose ", suppose, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" translate " ,convert[randint(0 , len(convert)-1)])
+	translation = change(" supposed ", supposed, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" understand " ,know[randint(0 , len(know)-1)])
+	translation = change(" getting ", getting, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" comprehend " ,know[randint(0 , len(know)-1)])
+	translation = change(" better ", better, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" explain " ,explain[randint(0 , len(explain)-1)])
+	translation = change(" become ", become, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" explanation " ,explanation[randint(0 , len(explanation)-1)])
+	translation = change(" becoming ", becoming, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" suppose " ,suppose[randint(0 , len(suppose)-1)])
+	translation = change(" became ", became, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" supposed " ,supposed[randint(0 , len(supposed)-1)])
+	translation = change(" before ", before, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" getting " ,getting[randint(0 , len(getting)-1)])
+	translation = change(" after ", after, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" better " ,better[randint(0 , len(better)-1)])
+	translation = change(" least ", least, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" become " ,become[randint(0 , len(become)-1)])
+	translation = change(" most ", most, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" becoming " ,becoming[randint(0 , len(becoming)-1)])
+	translation = change(" large ", large, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" became " ,became[randint(0 , len(became)-1)])
+	translation = change(" big ", large, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" before " ,before[randint(0 , len(before)-1)])
+	translation = change(" huge ", large, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" after " ,after[randint(0 , len(after)-1)])
+	translation = change(" small ", small, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" least " ,least[randint(0 , len(least)-1)])
+	translation = change(" little ", small, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" most " ,most[randint(0 , len(most)-1)])
+	translation = change(" tiny ", small, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" large " ,large[randint(0 , len(large)-1)])
+	translation = change(" upgrade ", upgrade, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" big " ,large[randint(0 , len(large)-1)])
+	translation = change(" improve ", upgrade, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" huge " ,large[randint(0 , len(large)-1)])
+	translation = change(" upgrades ", upgrades, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" small " ,small[randint(0 , len(small)-1)])
+	translation = change(" improvements ", upgrades, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" little " ,small[randint(0 , len(small)-1)])
+	translation = change(" upgraded ", upgraded, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" tiny " ,small[randint(0 , len(small)-1)])
+	translation = change(" improved ", upgraded, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" upgrade " ,upgrade[randint(0 , len(upgrade)-1)])
+	translation = change(" add ", add, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" improve " ,upgrade[randint(0 , len(upgrade)-1)])
+	translation = change(" remove ", remove, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" improvement " ,upgrade[randint(0 , len(upgrade)-1)])
+	translation = change(" subtract ", subtract, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" upgrades " ,upgrades[randint(0 , len(upgrades)-1)])
+	translation = change(" similar ", similar, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" improvements " ,upgrades[randint(0 , len(upgrades)-1)])
+	translation = change(" like ", similar, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" upgraded " ,upgraded[randint(0 , len(upgraded)-1)])
+	translation = change(" accept ", accept, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" improved " ,upgraded[randint(0 , len(upgraded)-1)])
+	translation = change(" accepted ", accepted, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" add " ,add[randint(0 , len(add)-1)])
+	translation = change(" add ", add, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" remove " ,remove[randint(0 , len(remove)-1)])
+	translation = change(" admit ", accept, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" subtract " ,remove[randint(0 , len(remove)-1)])
+	translation = change(" agree ", accept, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" similar " ,similar[randint(0 , len(similar)-1)])
+	translation = change(" see ", see, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" like " ,similar[randint(0 , len(similar)-1)])
+	translation = change(" event ", event, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" accept " ,accept[randint(0 , len(accept)-1)])
+	translation = change(" events ", events, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" accepted " ,accepted[randint(0 , len(accepted)-1)])
+	translation = change(" bad ", bad, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" admit " ,accept[randint(0 , len(accept)-1)])
+	translation = change(" rude ", rude, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" agree " ,accept[randint(0 , len(accept)-1)])
+	translation = change(" kin ", kin, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" see " ,see[randint(0 , len(see)-1)])
+	translation = change(" family ", kin, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" event " ,event[randint(0 , len(event)-1)])
+	translation = change(" story ", story, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" events " ,events[randint(0 , len(events)-1)])
+	translation = change(" wealth ", wealth, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" bad " ,bad[randint(0 , len(bad)-1)])
+	translation = change(" amount ", amount, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" rude " ,rude[randint(0 , len(rude)-1)])
+	translation = change(" chunk ", amount, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" polite " ,polite[randint(0 , len(polite)-1)])
+	translation = change(" volume ", amount, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" kin " ,kin[randint(0 , len(kin)-1)])
+	translation = change(" lot ", amount, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" family " ,kin[randint(0 , len(kin)-1)])
+	translation = change(" bunch ", amount, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" story " ,story[randint(0 , len(story)-1)])
+	translation = change(" joke ", joke, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" wealth " ,wealth[randint(0 , len(wealth)-1)])
+	translation = change(" joking ", joking, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" amount " ,amount[randint(0 , len(amount)-1)])
+	translation = change(" kidding ", joking, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" chunk " ,amount[randint(0 , len(amount)-1)])
+	translation = change(" jokingly ", jokingly, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" volume " ,amount[randint(0 , len(amount)-1)])
+	translation = change(" kiddingly ", jokingly, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" lot " ,amount[randint(0 , len(amount)-1)])
+	translation = change(" quit ", quit, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" bunch " ,amount[randint(0 , len(amount)-1)])
+	translation = change(" quiting ", quiting, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" joke " ,joke[randint(0 , len(joke)-1)])
+	translation = change(" begin ", begin, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" joking " ,joking[randint(0 , len(joking)-1)])
+	translation = change(" start ", begin, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" kidding " ,joking[randint(0 , len(joking)-1)])
+	translation = change(" beginning ", beginning, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" jokingly " ,jokingly[randint(0 , len(jokingly)-1)])
+	translation = change(" starting ", beginning, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" kiddingly " ,jokingly[randint(0 , len(jokingly)-1)])
+	translation = change(" say ", say, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" quit " ,quit[randint(0 , len(quit)-1)])
+	translation = change(" saying ", saying, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" quiting " ,quiting[randint(0 , len(quiting)-1)])
+	translation = change(" said ", said, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" begin " ,begin[randint(0 , len(begin)-1)])
+	translation = change(" tell ", tell, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" start " ,begin[randint(0 , len(begin)-1)])
+	translation = change(" told ", told, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" beginning " ,beginning[randint(0 , len(beginning)-1)])
+	translation = change(" guess ", guess, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" starting " ,beginning[randint(0 , len(beginning)-1)])
+	translation = change(" guessing ", guessing, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" say " ,say[randint(0 , len(say)-1)])
+	translation = change(" here ", here, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" saying " ,saying[randint(0 , len(saying)-1)])
+	translation = change(" lack ", lack, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" said " ,said[randint(0 , len(said)-1)])
+	translation = change(" absence ", lack, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" tell " ,tell[randint(0 , len(tell)-1)])
+	translation = change(" absent ", lacking, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" told " ,told[randint(0 , len(told)-1)])
+	translation = change(" lacking ", lacking, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" guess " ,guess[randint(0 , len(guess)-1)])
+	translation = change(" fair ", fair, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" guessing " ,guessing[randint(0 , len(guessing)-1)])
+	translation = change(" honest ", honest, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" here " ,here[randint(0 , len(here)-1)])
+	translation = change(" even ", even, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" lack " ,lack[randint(0 , len(lack)-1)])
+	translation = change(" done ", done, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" absence " ,lack[randint(0 , len(lack)-1)])
+	translation = change(" things ", things, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" lacking " ,lacking[randint(0 , len(lacking)-1)])
+	translation = change(" stuff ", things, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" absent " ,lacking[randint(0 , len(lacking)-1)])
+	translation = change(" ask ", ask, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" fair " ,fair[randint(0 , len(fair)-1)])
+	translation = change(" asking ", asking, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" honest " ,honest[randint(0 , len(honest)-1)])
+	translation = change(" asked ", asked, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" even " ,even[randint(0 , len(even)-1)])
+	translation = change(" full ", full, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" done " ,done[randint(0 , len(done)-1)])
+	translation = change(" crystal ", crystal, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" things " ,things[randint(0 , len(things)-1)])
+	translation = change(" clean ", clean, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" stuff " ,things[randint(0 , len(things)-1)])
+	translation = change(" clear ", clean, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" ask " ,ask[randint(0 , len(ask)-1)])
+	translation = change(" check ", check, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" asking " ,asking[randint(0 , len(asking)-1)])
+	translation = change(" out ", out, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" asked " ,asked[randint(0 , len(asked)-1)])
+	translation = change(" worker ", worker, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" full " ,full[randint(0 , len(full)-1)])
+	translation = change(" workers ", workers, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" crystal " ,crystal[randint(0 , len(crystal)-1)])
+	translation = change(" many ", many, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" clean " ,clean[randint(0 , len(clean)-1)])
+	translation = change(" luck ", luck, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" clear " ,clean[randint(0 , len(clean)-1)])
+	translation = change(" dare ", dare, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" check " ,check[randint(0 , len(check)-1)])
+	translation = change(" challenge ", dare, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" out " ,out[randint(0 , len(out)-1)])
+	translation = change(" update ", update, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" worker " ,worker[randint(0 , len(worker)-1)])
+	translation = change(" updates ", updates, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" workers " ,workers[randint(0 , len(workers)-1)])
+	translation = change(" phrase ", phrase, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" many " ,many[randint(0 , len(many)-1)])
+	translation = change(" sentence ", phrase, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" luck " ,luck[randint(0 , len(luck)-1)])
+	translation = change(" phrases ", phrases, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" dare " ,dare[randint(0 , len(dare)-1)])
+	translation = change(" sentences ", phrases, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" challenge " ,dare[randint(0 , len(dare)-1)])
+	translation = change(" none ", none, translation)
 
-	for x in range(0, len(translation)):
-		translation = translation.replace(" update " ,update[randint(0 , len(update)-1)])
-
-	for x in range(0, len(translation)):
-		translation = translation.replace(" updates " ,updates[randint(0 , len(updates)-1)])
-
-	for x in range(0, len(translation)):
-		translation = translation.replace(" phrase " ,phrase[randint(0 , len(phrase)-1)])
-
-	for x in range(0, len(translation)):
-		translation = translation.replace(" sentence " ,phrase[randint(0 , len(phrase)-1)])
-
-	for x in range(0, len(translation)):
-		translation = translation.replace(" phrases " ,phrases[randint(0 , len(phrases)-1)])
-
-	for x in range(0, len(translation)):
-		translation = translation.replace(" sentences " ,phrases[randint(0 , len(phrases)-1)])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	translation = change(" all ", allw, translation)
 
 
 
