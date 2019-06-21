@@ -30,7 +30,7 @@ do = [" transact ", " conclude "]
 
 mean = [" imply", " express"]
 
-hey = [" ciao ", " regards ", " compliments ", " hail "]
+hey = [" regards ", " compliments ", " hail "]
 
 also = [" along with ", " as a consequence ", " furthermore ", " moreover ", " including ", " likewise "]
 
