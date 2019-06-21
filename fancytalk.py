@@ -552,6 +552,8 @@ father = [" begetter "]
 mother = [" forebearer "]
 
 
+
+
 #functions
 
 
@@ -577,6 +579,9 @@ while(True):
 
 	for x in range(0, len(translation)):
 		translation = translation.replace("'re " ," art ")
+
+	for x in range(0, len(translation)):
+		translation = translation.replace("'m " ," am ")
 
 #translate
 
