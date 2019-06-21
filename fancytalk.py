@@ -559,6 +559,8 @@ triple = [" trine ", " treble "]
 
 camera = [" daguerreotype "]
 
+cup = [" chalice "]
+
 
 #functions
 
@@ -1337,6 +1339,7 @@ while(True):
 
 	translation = change(" camera ", camera, translation)
 
+	translation = change(" cup ", cup, translation)
 
 
 
