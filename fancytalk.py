@@ -142,6 +142,8 @@ this = [" aforementioned ", " previously mentioned "]
 
 cool = [" ostentatious ", " keen ", " sensational ", " a la mode "]
 
+burn = [" conflagrate "]
+
 are = [" art "]
 
 basic = [" essential"]
@@ -565,7 +567,7 @@ cup = [" chalice "]
 
 nextw = [" subsequent "]
 
-burn = [" conflagrate "]
+bar = [" lounge ", " bistro "]
 
 
 #functions
@@ -790,6 +792,10 @@ while(True):
 	translation = change(" this ", this, translation)
 
 	translation = change(" cool ", cool, translation)
+
+	translation = change(" burn ", burn, translation)
+
+	translation = change(" blaze ", burn, translation)
 
 	translation = change(" are ", are, translation)
 
@@ -1353,13 +1359,11 @@ while(True):
 
 	translation = change(" next ", nextw, translation)
 
-	translation = change(" burn ", burn, translation)
-
-	translation = change(" blaze ", burn, translation)
-
 	translation = change(" notice ", see, translation)
 
 	translation = change(" realize ", see, translation)
+
+	translation = change(" bar ", bar, translation)
 
 
 
