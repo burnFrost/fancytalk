@@ -1363,7 +1363,11 @@ while(True):
 
 	translation = change(" update ", update, translation)
 
+	translation = change(" change ", update, translation)
+
 	translation = change(" updates ", updates, translation)
+
+	translation = change(" changes ", updates, translation)
 
 	translation = change(" phrase ", phrase, translation)
 
