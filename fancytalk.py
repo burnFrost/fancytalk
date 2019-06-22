@@ -72,7 +72,7 @@ worked = [" performed ", " functioned "]
 
 working = [" performing ", " functioning "]
 
-want = [" desire", " covet", " long", " lust", " yearn"]
+want = [" desire ", " covet ", " long ", " lust ", " yearn "]
 
 need = [" require "]
 
