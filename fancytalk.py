@@ -82,8 +82,6 @@ so = [" thus ", " of which "]
 
 going = [" ensueing ", " developing "]
 
-
-
 good = [" valorous "]
 
 fix = [" rectify ", " remedy "]
@@ -168,7 +166,7 @@ chatting = [" prattling "]
 
 very = [" profoundly ", " exceedingly ", " extraordinarily ", " astonishingly ", " emphatically "]
 
-thank = [" be obliged unto "]
+thank = [" beest obliged unto "]
 
 happen = [" eventuate ", " proceed ", " betide "]
 
@@ -178,8 +176,7 @@ happened = [" eventuated ", " proceeded ", " betided "]
 
 happening = [" eventuating ", " proceeding ", " betiding "]
 
-should = [ " entertain ", " suffer ", " fall on "]
-
+should = [" entertain ", " suffer ", " fall on "]
 
 now = [" at thee trice "]
 
@@ -209,6 +206,8 @@ on = [" adjacent "]
 
 be = [" abide ", " endure ", " beest "]
 
+been = [" abiden "]
+
 being = [" abiding ", " enduring "]
 
 there = [" thither "]
@@ -231,7 +230,7 @@ favorite = [" cherished ", " choice ", " revered "]
 
 food = [" comestible ", " viand "]
 
-having = [" being compelled unto ", " entertaining "]
+having = [" beesting compelled unto ", " entertaining "]
 
 tedious = [" enervating ", " soporific "]
 
@@ -259,7 +258,7 @@ my = [" mine own "]
 
 that = [" yond "]
 
-will = [" shall "]
+will = [" shalt "]
 
 only = [" merely "]
 
@@ -343,7 +342,7 @@ choose = [" predestine ", " commit oneself "]
 
 choice = [" volition " ]
 
-can = [" may ", " be capable of ", " commit "]
+can = [" may ", " beest capable of ", " commit "]
 
 we = [" our own selves "]
 
@@ -610,7 +609,7 @@ def change(text, words, translate):
 #Main
 
 while(True):
-	translation = input(": ")
+	translation = input("< ")
 
 	translation = " "+translation+" "
 
@@ -629,7 +628,7 @@ while(True):
 		translation = translation.replace(" ca " ," can ")
 
 	for x in range(0, len(translation)):
-		translation = translation.replace(" wo " ," will ")
+		translation = translation.replace(" wo " ," shalt ")
 
 #translate
 
@@ -904,6 +903,8 @@ while(True):
 	translation = change(" on ", on, translation)
 
 	translation = change(" be ", be, translation)
+
+	translation = change(" been ", been, translation)
 
 	translation = change(" being ", being, translation)
 
@@ -1460,6 +1461,6 @@ while(True):
 
 
 
-	print("/ "+translation)
+	print('>'+translation)
 
 
