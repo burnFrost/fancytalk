@@ -625,6 +625,9 @@ while(True):
 	for x in range(0, len(translation)):
 		translation = translation.replace("'m " ," am ")
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" ca " ," can ")
+
 #translate
 
 	translation = change(" mean", mean, translation)
