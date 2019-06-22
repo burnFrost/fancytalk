@@ -569,6 +569,11 @@ nextw = [" subsequent "]
 
 bar = [" lounge ", " bistro "]
 
+walk = [" wander "]
+
+walked = [" wandered "]
+
+walking = [" wandering "]
 
 #functions
 
@@ -1364,6 +1369,12 @@ while(True):
 	translation = change(" realize ", see, translation)
 
 	translation = change(" bar ", bar, translation)
+
+	translation = change(" walk ", walk, translation)
+
+	translation = change(" walked ", walked, translation)
+
+	translation = change(" walking ", walking, translation)
 
 
 
