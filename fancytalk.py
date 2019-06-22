@@ -591,6 +591,8 @@ because = [" by virtue of "]
 
 since = [" therefore ", " hence "]
 
+these = [" thee indicated ", " thee particular "]
+
 
 
 
@@ -1420,6 +1422,12 @@ while(True):
 	translation = change(" took ", got, translation)
 
 	translation = change(" taking ", getting, translation)
+
+	translation = change(" these ", these, translation)
+
+	translation = change(" those ", these, translation)
+
+	translation = change(" them2 ", these, translation)
 
 
 
