@@ -614,6 +614,10 @@ having = [" falling upon ", " including ", " embracing ", " suffering "]
 
 at = [" upon "]
 
+problem = [" dilemma "]
+
+problems = [" dilemmas "]
+
 
 
 
@@ -1480,6 +1484,9 @@ while(True):
 
 	translation = change(" at ", at, translation)
 
+	translation = change(" problem ", problem, translation)
+
+	translation = change(" problems ", problems, translation)
 
 
 
