@@ -12,15 +12,15 @@ how = [" according unto what ", " after what precedent ", " by means of " , " by
 
 who = [" whom "]
 
-the = [" thee "]
+the = [" the "]
 
-them = [" those folk " ]
+them = [" those folk "]
 
 you = [" thou "]
 
-your = [" thine ", " thy "]
+your = [" thy "]
 
-yours = [" thines ", " thys "]
+yours = [" thine "]
 
 doing = [" accomplishing ", " achieving ", " acting "]
 
@@ -28,7 +28,7 @@ does = [" suffice ", " avail "]
 
 do = [" transact ", " conclude "]
 
-mean = [" imply", " express"]
+mean = [" imply ", " express "]
 
 hey = [" salutations ", " regards ", " compliments ", " hail "]
 
@@ -180,7 +180,7 @@ happening = [" eventuating ", " proceeding ", " betiding "]
 
 should = [" entertain ", " suffer ", " fall upon "]
 
-now = [" upon thee trice "]
+now = [" upon the trice "]
 
 time = [" instance of trice "]
 
@@ -279,6 +279,8 @@ to = [" unto "]
 then = [" thus ", " therefore ", " hence "]
 
 i = [" thines truly "]
+
+me = [" thissen "]
 
 why = [" wherefore "]
 
@@ -590,7 +592,7 @@ because = [" by virtue of "]
 
 since = [" therefore ", " hence "]
 
-these = [" thee indicated ", " thee particular "]
+these = [" the indicated ", " the particular "]
 
 give = [" bestow "]
 
@@ -656,7 +658,7 @@ while(True):
 
 #translate
 
-	translation = change(" mean", mean, translation)
+	translation = change(" mean ", mean, translation)
 
 	translation = change(" and ", andw, translation)
 
@@ -1012,7 +1014,7 @@ while(True):
 
 	translation = change(" i ", i, translation)
 
-	translation = change(" me ", i, translation)
+	translation = change(" me ", me, translation)
 
 	translation = change(" why ", why, translation)
 
@@ -1482,8 +1484,10 @@ while(True):
 
 
 
-#punctuations
+#punctuations & fixes
 
+	for x in range(0, len(translation)):
+		translation = translation.replace(" unto thou " ," unto thee ")
 
 	for x in range(0, len(translation)):
 		translation = translation.replace(" ." ,".")
