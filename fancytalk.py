@@ -56,7 +56,7 @@ skill = [" proficiency ", " adeptness "]
 
 skilled = [" proficient ", " adept "]
 
-had = [" included ", " embraced "]
+had = [" fell upon ", " included ", " embraced ", " suffered "]
 
 correct = [" appropriate ", " proper "]
 
@@ -360,7 +360,7 @@ late = [" unpunctual "]
 
 where = [" unto what venue "]
 
-has = [" fell upon ", " suffered "]
+has = [" falls upon ", " includes ", " embraces ", " suffers "]
 
 rich = [" opulent "]
 
@@ -606,9 +606,9 @@ tried = [" pursued "]
 
 trying = [" pursueing "]
 
-have = [" fall upon " , " suffer "]
+have = [" fall upon " , " include ", " embrace " , " suffer "]
 
-having = [" falling upon ", " suffering "]
+having = [" falling upon ", " including ", " embracing ", " suffering "]
 
 at = [" upon "]
 
