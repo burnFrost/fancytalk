@@ -1074,9 +1074,9 @@ while(True):
 
 	translation = change(" won ", won, translation)
 
-	translation = change(" reward ", reward, translation)
+	translation = change(" reward", reward, translation)
 
-	translation = change(" prize ", reward, translation)
+	translation = change(" prize", reward, translation)
 
 	translation = change(" almost ", almost, translation)
 
