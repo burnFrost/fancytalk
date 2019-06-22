@@ -66,9 +66,11 @@ know = [" fathom ", " discern ", " perceive "]
 
 knowing = [" fathoming ", " discerning ", " perceiving "]
 
-work = [" endeavor ", " perform ", " function "]
+work = [" perform ", " function "]
 
-working = [" endeavoring ", " performing ", " functioning "]
+worked = [" performed ", " functioned "]
+
+working = [" performing ", " functioning "]
 
 want = [" desire", " covet", " long", " lust", " yearn"]
 
@@ -176,9 +178,9 @@ happened = [" eventuated ", " proceeded ", " betided "]
 
 happening = [" eventuating ", " proceeding ", " betiding "]
 
-should = [" entertain ", " suffer ", " fall on "]
+should = [" entertain ", " suffer ", " fall upon "]
 
-now = [" at thee trice "]
+now = [" upon thee trice "]
 
 time = [" instance of trice "]
 
@@ -201,8 +203,6 @@ much = [" exuberantly ", " profusely "]
 quiet = [" reticent ", " whist "]
 
 about = [ " apropos ", " in respect unto " ]
-
-on = [" adjacent "]
 
 be = [" abide ", " endure ", " beest "]
 
@@ -250,7 +250,7 @@ used = [" employed ", " adopted ", " applied "]
 
 using = [" employing ", " adopting ", " applying "]
 
-gratz = [" complimentations on thine achievement "]
+gratz = [" complimentations upon thine achievement "]
 
 likely = [" presumptively "]
 
@@ -290,7 +290,7 @@ pants = [" britches "]
 
 oh = [" alas ", " woe "]
 
-always = [" at each moment ", " perpetually ", " everlastingly ", " forevermore ", " in perpetuum ", " unceasingly "]
+always = [" upon each moment ", " perpetually ", " everlastingly ", " forevermore ", " in perpetuum ", " unceasingly "]
 
 method = [" modus operandi "]
 
@@ -360,7 +360,7 @@ late = [" unpunctual "]
 
 where = [" unto what venue "]
 
-has = [" fall upon "]
+has = [" fell upon ", " suffered "]
 
 rich = [" opulent "]
 
@@ -594,6 +594,25 @@ these = [" thee indicated ", " thee particular "]
 
 give = [" bestow "]
 
+attempt = [" endeavor "]
+
+attempted = [" endeavored "]
+
+attempting = [" endeavoring "]
+
+tryw = [" pursue "]
+
+tried = [" pursued "]
+
+trying = [" pursueing "]
+
+have = [" fall upon " , " suffer "]
+
+having = [" falling upon ", " suffering "]
+
+at = [" upon "]
+
+
 
 
 
@@ -674,15 +693,21 @@ while(True):
 
 	translation = change(" work ", work, translation)
 
+	translation = change(" worked ", worked, translation)
+
 	translation = change(" working ", working, translation)
 
-	translation = change(" try ", work, translation)
+	translation = change(" try ", tryw, translation)
 
-	translation = change(" trying ", working, translation)
+	translation = change(" tried ", tried, translation)
 
-	translation = change(" attempt ", work, translation)
+	translation = change(" trying ", trying, translation)
 
-	translation = change(" attempting ", working, translation)
+	translation = change(" attempt ", attempt, translation)
+
+	translation = change(" attempted ", attempted, translation)
+
+	translation = change(" attempting ", attempting, translation)
 
 	translation = change(" want ", want, translation)
 
@@ -902,7 +927,7 @@ while(True):
 
 	translation = change(" about ", about, translation)
 
-	translation = change(" on ", on, translation)
+	translation = change(" on ", at, translation)
 
 	translation = change(" be ", be, translation)
 
@@ -1439,6 +1464,12 @@ while(True):
 	translation = change(" them2 ", these, translation)
 
 	translation = change(" give ", give, translation)
+
+	translation = change(" have ", have, translation)
+
+	translation = change(" having ", having, translation)
+
+	translation = change(" at ", at, translation)
 
 
 
