@@ -98,6 +98,10 @@ thing = [" means "]
 
 fancy = [" elegant ", " lavish "]
 
+fancily = [" elegantly ", " lavishly "]
+
+fancier = [" eleganter ", " lavisher "]
+
 talk = [" eloquent ", " orate "]
 
 talking = [" eloquenting ", " orating "]
@@ -756,6 +760,10 @@ while(True):
 	translation = change(" program ", thing, translation)
 
 	translation = change(" fancy ", fancy, translation)
+
+	translation = change(" fancily ", fancily, translation)
+
+	translation = change(" fancier ", fancier, translation)
 
 	translation = change(" talk ", talk, translation)
 
