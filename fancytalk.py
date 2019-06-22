@@ -577,6 +577,19 @@ walked = [" wandered "]
 
 walking = [" wandering "]
 
+value = [" desirability "]
+
+reason = [" vindication "]
+
+reasons = [" vindications "]
+
+because = [" by virtue of "]
+
+since = [" therefore ", " hence "]
+
+
+
+
 #functions
 
 
@@ -1379,6 +1392,20 @@ while(True):
 	translation = change(" walked ", walked, translation)
 
 	translation = change(" walking ", walking, translation)
+
+	translation = change(" value ", value, translation)
+
+	translation = change(" worth ", value, translation)
+
+	translation = change(" reason ", reason, translation)
+
+	translation = change(" reasons ", reasons, translation)
+
+	translation = change(" because ", because, translation)
+
+	translation = change(" since ", since, translation)
+
+
 
 
 
