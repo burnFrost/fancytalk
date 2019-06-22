@@ -1413,6 +1413,14 @@ while(True):
 
 	translation = change(" since ", since, translation)
 
+	translation = change(" take ", get, translation)
+
+	translation = change(" taken ", got, translation)
+
+	translation = change(" took ", got, translation)
+
+	translation = change(" taking ", getting, translation)
+
 
 
 
