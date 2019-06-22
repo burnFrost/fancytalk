@@ -465,6 +465,8 @@ say = [" express "]
 
 saying = [" expressing "]
 
+says = [" expresses "]
+
 said = [" aforementioned "]
 
 tell = [" apprise "]
@@ -727,6 +729,8 @@ while(True):
 	translation = change(" repaired ", fixed, translation)
 
 	translation = change(" saying ", saying, translation)
+
+	translation = change(" says ", says, translation)
 
 	translation = change(" does ", does, translation)
 
