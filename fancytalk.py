@@ -592,6 +592,8 @@ since = [" therefore ", " hence "]
 
 these = [" thee indicated ", " thee particular "]
 
+give = [" bestow "]
+
 
 
 
@@ -1435,6 +1437,8 @@ while(True):
 	translation = change(" those ", these, translation)
 
 	translation = change(" them2 ", these, translation)
+
+	translation = change(" give ", give, translation)
 
 
 
