@@ -239,9 +239,11 @@ confused = [" perplexed ", " perturbed "]
 
 confusing = [" perplexing ", " perturbing "]
 
-use = [" utilize ", " employ ", " adopt ", " apply "]
+use = [" employ ", " adopt ", " apply "]
 
-using = [" utilizing ", " employing ", " applying "]
+used = [" employed ", " adopted ", " applied "]
+
+using = [" employing ", " adopting ", " applying "]
 
 gratz = [" complimentations on thine achievement "]
 
@@ -562,6 +564,8 @@ camera = [" daguerreotype "]
 cup = [" chalice "]
 
 nextw = [" subsequent "]
+
+burn = [" conflagrate "]
 
 
 #functions
@@ -888,6 +892,10 @@ while(True):
 	translation = change(" confusing ", confusing, translation)
 
 	translation = change(" use ", use, translation)
+
+	translation = change(" used ", used, translation)
+
+	translation = change(" using ", using, translation)
 
 	translation = change(" gratz ", gratz, translation)
 
@@ -1344,6 +1352,14 @@ while(True):
 	translation = change(" cup ", cup, translation)
 
 	translation = change(" next ", nextw, translation)
+
+	translation = change(" burn ", burn, translation)
+
+	translation = change(" blaze ", burn, translation)
+
+	translation = change(" notice ", see, translation)
+
+	translation = change(" realize ", see, translation)
 
 
 
