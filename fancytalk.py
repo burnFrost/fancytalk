@@ -637,6 +637,9 @@ while(True):
 #fix
 
 	for x in range(0, len(translation)):
+		translation = translation.replace("'ve " ," have ")
+
+	for x in range(0, len(translation)):
 		translation = translation.replace("n't " ," nay ")
 
 	for x in range(0, len(translation)):
