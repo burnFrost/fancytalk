@@ -618,6 +618,12 @@ problem = [" dilemma "]
 
 problems = [" dilemmas "]
 
+whole = [" plenary "]
+
+entire = [" inclusive "]
+
+face = [" visage "]
+
 
 
 
@@ -1487,6 +1493,12 @@ while(True):
 	translation = change(" problem ", problem, translation)
 
 	translation = change(" problems ", problems, translation)
+
+	translation = change(" entire ", entire, translation)
+
+	translation = change(" whole ", whole, translation)
+
+	translation = change(" face ", face, translation)
 
 
 
